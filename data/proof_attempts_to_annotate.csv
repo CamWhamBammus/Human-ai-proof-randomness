@@ -1,0 +1,3718 @@
+theorem_id,attempt_id,theorem_text,subject,difficulty,model,temperature,prompt,proof_text,proof_length_words,num_equation_symbols,contains_induction,contains_contradiction,contains_contrapositive,contains_bijection,contains_casework,contains_clearly_obvious,suggested_strategy,strategy,correct,error_type,notes
+1,1,Prove that the sum of the first n odd positive integers is n^2.,induction,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the sum of the first n odd positive integers is n^2.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The sum of the first \( n \) odd positive integers is \( n^2 \). That is,  
+\[
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+\]
+
+---
+
+**Proof:**
+
+We proceed by mathematical induction on \( n \).
+
+**Base Case:**  
+For \( n = 1 \), the sum of the first \( 1 \) odd number is simply \( 1 \).  
+The right-hand side is \( 1^2 = 1 \).  
+Thus,  
+\[
+1 = 1^2,
+\]  
+which is true.
+
+---
+
+**Inductive Step:**  
+Assume the statement is true for some arbitrary positive integer \( k \), i.e.,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) = k^2.
+\]  
+This is the induction hypothesis.
+
+We need to show that the statement holds for \( n = k + 1 \), i.e.,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + (2(k+1) - 1) = (k+1)^2.
+\]
+
+Starting from the left-hand side for \( n = k + 1 \), we have:  
+\[
+\sum_{i=1}^{k+1} (2i - 1) = \left( \sum_{i=1}^k (2i - 1) \right) + (2(k+1) - 1).
+\]
+
+By the induction hypothesis:  
+\[
+= k^2 + (2k + 2 - 1) = k^2 + (2k + 1).
+\]
+
+Simplify the right side:  
+\[
+k^2 + 2k + 1 = (k + 1)^2.
+\]
+
+Hence,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + (2(k+1) - 1) = (k+1)^2,
+\]  
+which completes the inductive step.
+
+---
+
+**Conclusion:**  
+By the principle of mathematical induction, the sum of the first \( n \) odd positive integers is equal to \( n^2 \) for all positive integers \( n \).
+
+\[
+\boxed{
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+}
+\]
+
+\(\blacksquare\)",300,35,True,False,False,False,True,False,induction,,,,
+1,2,Prove that the sum of the first n odd positive integers is n^2.,induction,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the sum of the first n odd positive integers is n^2.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The sum of the first \( n \) odd positive integers is equal to \( n^2 \). That is,  
+\[
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+\]
+
+---
+
+**Proof:**  
+We will prove this theorem using the method of mathematical induction.
+
+**Base Case:**  
+For \( n = 1 \), the sum of the first \( 1 \) odd positive integer is simply:  
+\[
+1 = 1^2.
+\]  
+This holds true.
+
+---
+
+**Inductive Step:**  
+Assume the statement is true for some arbitrary positive integer \( k \); that is, assume  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) = k^2.
+\]
+
+We need to show that the statement holds for \( k + 1 \), i.e.,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + [2(k+1) - 1] = (k+1)^2.
+\]
+
+Starting from the inductive hypothesis, add the \((k+1)\)-th odd integer \( 2(k+1) - 1 = 2k + 1 \) to both sides:  
+\[
+k^2 + (2k + 1) = (k + 1)^2.
+\]
+
+Expand the right-hand side:  
+\[
+(k + 1)^2 = k^2 + 2k + 1.
+\]
+
+Since the left-hand side matches the right-hand side exactly, the statement holds for \( k + 1 \).
+
+---
+
+**Conclusion:**  
+By the principle of mathematical induction, the sum of the first \( n \) odd positive integers is \( n^2 \) for all positive integers \( n \).
+
+\[
+\boxed{1 + 3 + 5 + \cdots + (2n - 1) = n^2.}
+\]
+
+**Proof complete.**",258,20,True,False,False,False,True,False,induction,,,,
+1,3,Prove that the sum of the first n odd positive integers is n^2.,induction,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the sum of the first n odd positive integers is n^2.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The sum of the first \( n \) odd positive integers is \( n^2 \). That is,  
+\[
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+\]
+
+---
+
+**Proof:**
+
+We will prove the theorem using mathematical induction.
+
+---
+
+**Base Case (\( n = 1 \))**:  
+The sum of the first 1 odd positive integer is just the first odd number itself:  
+\[
+1 = 1^2.
+\]  
+This is true.
+
+---
+
+**Inductive Hypothesis:**  
+Assume that for some positive integer \( k \), the sum of the first \( k \) odd positive integers is  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) = k^2.
+\]
+
+---
+
+**Inductive Step:**  
+We need to show that the sum of the first \( k+1 \) odd positive integers is \((k+1)^2\). Consider the sum:  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + [2(k+1) - 1].
+\]
+
+Using the inductive hypothesis, rewrite the sum as:  
+\[
+k^2 + [2(k+1) - 1].
+\]
+
+Simplify the added term:  
+\[
+2(k+1) - 1 = 2k + 2 - 1 = 2k + 1.
+\]
+
+Therefore, the sum is:  
+\[
+k^2 + (2k + 1).
+\]
+
+Recall the algebraic identity:  
+\[
+k^2 + 2k + 1 = (k + 1)^2.
+\]
+
+Thus,  
+\[
+k^2 + (2k + 1) = (k + 1)^2.
+\]
+
+This shows that the sum of the first \( k+1 \) odd positive integers is \((k+1)^2\).
+
+---
+
+**Conclusion:**  
+By the principle of mathematical induction, the sum of the first \( n \) odd positive integers is \( n^2 \) for all positive integers \( n \).
+
+\[
+\boxed{1 + 3 + 5 + \cdots + (2n - 1) = n^2.}
+\]
+
+**Q.E.D.**",289,23,True,False,False,False,True,False,induction,,,,
+1,4,Prove that the sum of the first n odd positive integers is n^2.,induction,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the sum of the first n odd positive integers is n^2.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The sum of the first \( n \) odd positive integers is \( n^2 \).  
+Formally,  
+\[
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+\]
+
+---
+
+**Proof:**  
+
+We will prove this theorem by **mathematical induction** on \( n \).
+
+**Base case:**  
+Let \( n = 1 \).  
+The sum of the first \( 1 \) odd number is just \( 1 \).  
+The right-hand side is \( 1^2 = 1 \).  
+So,  
+\[
+1 = 1^2,
+\]
+which is true. Thus, the base case holds.
+
+---
+
+**Inductive step:**  
+Assume the statement is true for some integer \( k \geq 1 \); that is, assume  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) = k^2.
+\]
+
+We need to prove that the statement holds for \( k + 1 \), i.e.,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + [2(k+1) - 1] = (k+1)^2.
+\]
+
+Using the inductive hypothesis, the left-hand side becomes  
+\[
+k^2 + [2(k+1) - 1].
+\]
+
+Simplify the term in brackets:  
+\[
+2(k+1) - 1 = 2k + 2 - 1 = 2k + 1.
+\]
+
+Thus,  
+\[
+k^2 + 2k + 1.
+\]
+
+Recognize that  
+\[
+k^2 + 2k + 1 = (k + 1)^2.
+\]
+
+Hence,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + (2k + 1) = (k + 1)^2,
+\]
+which completes the inductive step.
+
+---
+
+**Conclusion:**  
+By the principle of mathematical induction, the sum of the first \( n \) odd positive integers is equal to \( n^2 \) for all positive integers \( n \).
+
+\[
+\boxed{1 + 3 + 5 + \cdots + (2n - 1) = n^2.}
+\]
+
+**Q.E.D.**",291,25,True,False,False,False,True,False,induction,,,,
+1,5,Prove that the sum of the first n odd positive integers is n^2.,induction,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the sum of the first n odd positive integers is n^2.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The sum of the first \( n \) odd positive integers is \( n^2 \). Formally,  
+\[
+1 + 3 + 5 + \cdots + (2n-1) = n^2.
+\]
+
+---
+
+**Proof:**  
+
+We will prove the theorem by mathematical induction on \( n \).
+
+**Base Case:**  
+For \( n = 1 \), the sum of the first odd positive integer is just the first odd number itself:  
+\[
+1 = 1^2.
+\]  
+This is true.
+
+---
+
+**Inductive Step:**  
+Assume the statement is true for some positive integer \( k \); that is, assume  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) = k^2.
+\]
+
+We need to prove the statement for \( k + 1 \), i.e.,  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + (2(k+1) - 1) = (k+1)^2.
+\]
+
+Starting from the left-hand side, use the inductive hypothesis:  
+\[
+1 + 3 + 5 + \cdots + (2k - 1) + (2(k+1) - 1) = k^2 + (2k + 1).
+\]
+
+Now simplify the right-hand side:  
+\[
+k^2 + (2k + 1) = k^2 + 2k + 1 = (k + 1)^2.
+\]
+
+This completes the inductive step.
+
+---
+
+**Conclusion:**  
+By the principle of mathematical induction, the sum of the first \( n \) odd positive integers is \( n^2 \) for all positive integers \( n \).
+
+\[
+\boxed{
+1 + 3 + 5 + \cdots + (2n - 1) = n^2.
+}
+\]
+
+**Q.E.D.**",247,20,True,False,False,False,True,False,induction,,,,
+2,1,Prove that the product of two odd integers is odd.,number theory,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the product of two odd integers is odd.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+The product of two odd integers is odd.
+
+**Proof:**  
+Let \(a\) and \(b\) be two arbitrary odd integers. By definition of odd integers, there exist integers \(k\) and \(m\) such that:  
+\[
+a = 2k + 1
+\]
+and  
+\[
+b = 2m + 1.
+\]
+
+We want to prove that the product \(ab\) is also odd.
+
+Consider the product:
+\[
+ab = (2k + 1)(2m + 1).
+\]
+
+Expanding the product using the distributive property:
+\[
+ab = (2k)(2m) + (2k)(1) + (1)(2m) + (1)(1).
+\]
+
+Simplify each term:
+\[
+ab = 4km + 2k + 2m + 1.
+\]
+
+Group the terms involving 2:
+\[
+ab = 4km + 2k + 2m + 1 = 2(2km + k + m) + 1.
+\]
+
+Since \(k\), \(m\), and \(2km + k + m\) are integers (the set of integers is closed under addition and multiplication), define:
+\[
+n = 2km + k + m,
+\]
+where \(n \in \mathbb{Z}\).
+
+Thus,
+\[
+ab = 2n + 1,
+\]
+which matches the definition of an odd integer.
+
+Therefore, the product \(ab\) of two odd integers \(a\) and \(b\) is odd.
+
+\[
+\boxed{\text{Q.E.D.}}
+\]",193,9,False,False,False,False,False,False,construction,,,,
+2,2,Prove that the product of two odd integers is odd.,number theory,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the product of two odd integers is odd.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** The product of two odd integers is odd.
+
+**Proof:**
+
+Let \( a \) and \( b \) be two odd integers.
+
+By definition of odd integers, there exist integers \( m \) and \( n \) such that:
+\[
+a = 2m + 1
+\]
+\[
+b = 2n + 1
+\]
+
+We want to prove that the product \( ab \) is odd.
+
+Calculate the product:
+\[
+ab = (2m + 1)(2n + 1)
+\]
+
+Using the distributive property:
+\[
+ab = 2m \cdot 2n + 2m \cdot 1 + 1 \cdot 2n + 1 \cdot 1
+\]
+\[
+ab = 4mn + 2m + 2n + 1
+\]
+
+Notice that we can factor 2 out of the terms except the last one:
+\[
+ab = 2(2mn + m + n) + 1
+\]
+
+Since \( m \) and \( n \) are integers, the expression \( 2mn + m + n \) is also an integer (call this integer \( k \)):
+\[
+k = 2mn + m + n \in \mathbb{Z}
+\]
+
+Therefore,
+\[
+ab = 2k + 1
+\]
+
+This shows that \( ab \) is of the form \( 2k + 1 \), which by definition means \( ab \) is an odd integer.
+
+**Hence, the product of two odd integers is odd.**
+
+\(\boxed{\text{Q.E.D.}}\)",220,8,False,False,False,False,False,False,direct,,,,
+2,3,Prove that the product of two odd integers is odd.,number theory,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the product of two odd integers is odd.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** The product of two odd integers is odd.
+
+**Proof:**
+
+Let \(a\) and \(b\) be two arbitrary odd integers. By definition of odd integers, there exist integers \(k\) and \(m\) such that
+
+\[
+a = 2k + 1
+\]
+and
+\[
+b = 2m + 1.
+\]
+
+We want to prove that the product \(ab\) is also odd.
+
+Calculate the product \(ab\):
+
+\[
+ab = (2k + 1)(2m + 1).
+\]
+
+Using the distributive property, expand the product:
+
+\[
+ab = (2k)(2m) + (2k)(1) + (1)(2m) + (1)(1).
+\]
+
+Simplify the terms:
+
+\[
+ab = 4km + 2k + 2m + 1.
+\]
+
+Group the terms containing a factor of 2:
+
+\[
+ab = 2(2km + k + m) + 1.
+\]
+
+Since \(k\) and \(m\) are integers, the expression \(2km + k + m\) is also an integer. Let this integer be denoted by \(n\), where
+
+\[
+n = 2km + k + m.
+\]
+
+Thus,
+
+\[
+ab = 2n + 1,
+\]
+
+which is the standard form of an odd integer.
+
+Therefore, the product \(ab\) is odd.
+
+\[
+\boxed{}
+\]
+
+**Q.E.D.**",183,8,False,False,False,False,False,False,algebraic,,,,
+2,4,Prove that the product of two odd integers is odd.,number theory,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the product of two odd integers is odd.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** The product of two odd integers is odd.
+
+**Proof:**
+
+Let \(a\) and \(b\) be two odd integers.
+
+By definition of odd integers, there exist integers \(m\) and \(n\) such that:
+\[
+a = 2m + 1
+\]
+\[
+b = 2n + 1
+\]
+
+Consider the product \(ab\):
+\[
+ab = (2m + 1)(2n + 1)
+\]
+
+Expanding the product using the distributive property:
+\[
+ab = 2m \cdot 2n + 2m \cdot 1 + 1 \cdot 2n + 1 \cdot 1
+\]
+\[
+ab = 4mn + 2m + 2n + 1
+\]
+
+Group the terms except for the last 1:
+\[
+ab = (4mn + 2m + 2n) + 1
+\]
+
+Factor 2 out of the grouped terms:
+\[
+ab = 2(2mn + m + n) + 1
+\]
+
+Since \(m\) and \(n\) are integers, the expression \(2mn + m + n\) is also an integer. Let:
+\[
+k = 2mn + m + n
+\]
+where \(k \in \mathbb{Z}\).
+
+Thus,
+\[
+ab = 2k + 1
+\]
+
+This shows that \(ab\) is of the form \(2k + 1\), which by definition means \(ab\) is an odd integer.
+
+**Therefore, the product of two odd integers is odd.**
+
+\(\boxed{\text{Q.E.D.}}\)",201,9,False,False,False,False,False,False,direct,,,,
+2,5,Prove that the product of two odd integers is odd.,number theory,1,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that the product of two odd integers is odd.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** The product of two odd integers is odd.
+
+**Proof:**
+
+Let \(a\) and \(b\) be two odd integers.
+
+By definition of odd integers, there exist integers \(m\) and \(n\) such that:
+\[
+a = 2m + 1
+\]
+\[
+b = 2n + 1
+\]
+
+Consider the product \(a \times b\):
+\[
+a \times b = (2m + 1)(2n + 1)
+\]
+
+Using the distributive property:
+\[
+a \times b = 2m \cdot 2n + 2m \cdot 1 + 1 \cdot 2n + 1 \cdot 1
+\]
+\[
+a \times b = 4mn + 2m + 2n + 1
+\]
+
+Group the terms that are multiples of 2:
+\[
+a \times b = 2(2mn + m + n) + 1
+\]
+
+Since \(m, n\) are integers, the expression \((2mn + m + n)\) is an integer, say \(k\), where:
+\[
+k = 2mn + m + n \in \mathbb{Z}
+\]
+
+Thus:
+\[
+a \times b = 2k + 1
+\]
+
+This matches the form of an odd integer.
+
+Therefore, the product of two odd integers \(a\) and \(b\) is odd.
+
+\(\boxed{\text{Q.E.D.}}\)",181,8,False,False,False,False,False,False,direct,,,,
+3,1,"Prove that if n^2 is even, then n is even.",number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if n^2 is even, then n is even.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** If \( n^2 \) is even, then \( n \) is even.
+
+**Proof:**
+
+We will prove the contrapositive statement:  
+*If \( n \) is not even (i.e., \( n \) is odd), then \( n^2 \) is not even (i.e., \( n^2 \) is odd).*  
+
+Since the contrapositive of a statement is logically equivalent to the statement itself, proving the contrapositive suffices.
+
+---
+
+**Step 1: Assume \( n \) is odd.**
+
+By definition, an odd integer can be written as  
+\[
+n = 2k + 1
+\]  
+for some integer \( k \).
+
+---
+
+**Step 2: Compute \( n^2 \).**
+
+\[
+n^2 = (2k + 1)^2 = (2k + 1)(2k + 1) = 4k^2 + 4k + 1
+\]
+
+---
+
+**Step 3: Simplify \( n^2 \).**
+
+\[
+n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
+\]
+
+Note that \( 2k^2 + 2k \) is an integer because \( k \) is an integer.
+
+Let \( m = 2k^2 + 2k \), so
+
+\[
+n^2 = 2m + 1
+\]
+
+---
+
+**Step 4: Interpret the form of \( n^2 \).**
+
+Since \( n^2 = 2m + 1 \), \( n^2 \) is of the form ""2 times an integer plus 1,"" which is the definition of an odd integer.
+
+---
+
+**Step 5: Conclude the contrapositive.**
+
+We have shown that if \( n \) is odd, then \( n^2 \) is odd.
+
+---
+
+**Step 6: Deduce the original statement.**
+
+Since the contrapositive is true, the original statement  
+*If \( n^2 \) is even, then \( n \) is even*  
+is also true.
+
+---
+
+**Q.E.D.**",268,28,False,False,True,False,False,False,contrapositive,,,,
+3,2,"Prove that if n^2 is even, then n is even.",number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if n^2 is even, then n is even.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( n^2 \) is even, then \( n \) is even.
+
+**Proof:**  
+We will prove the theorem by contradiction.
+
+1. Suppose \( n^2 \) is even. That is, \( n^2 = 2k \) for some integer \( k \).
+
+2. Assume, for the sake of contradiction, that \( n \) is not even. This means \( n \) is odd. By definition of odd integers, there exists an integer \( m \) such that:
+   \[
+   n = 2m + 1.
+   \]
+
+3. Now, compute \( n^2 \):
+   \[
+   n^2 = (2m + 1)^2 = 4m^2 + 4m + 1 = 2(2m^2 + 2m) + 1.
+   \]
+
+4. Notice that \( 2m^2 + 2m \) is an integer (since \( m \) is an integer), so the expression can be written as:
+   \[
+   n^2 = 2q + 1,
+   \]
+   where \( q = 2m^2 + 2m \) is an integer.
+
+5. The expression \( 2q + 1 \) is the form of an odd number. Therefore, \( n^2 \) must be odd.
+
+6. This contradicts our initial assumption that \( n^2 \) is even.
+
+7. Because assuming \( n \) is odd leads to a contradiction, \( n \) must be even.
+
+**Conclusion:**  
+If \( n^2 \) is even, then \( n \) is even. \(\blacksquare\)",217,21,False,True,False,False,False,False,contradiction,,,,
+3,3,"Prove that if n^2 is even, then n is even.",number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if n^2 is even, then n is even.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( n^2 \) is even, then \( n \) is even.
+
+---
+
+**Proof:**
+
+We will prove the statement by contrapositive. The contrapositive of the statement ""If \( n^2 \) is even, then \( n \) is even"" is:
+
+**Contrapositive:**  
+If \( n \) is **not** even (i.e., \( n \) is odd), then \( n^2 \) is **not** even (i.e., \( n^2 \) is odd).
+
+If we prove the contrapositive, then the original statement is proven true.
+
+---
+
+**Step 1: Assume \( n \) is odd.**
+
+By definition of odd integers, there exists an integer \( k \) such that
+\[
+n = 2k + 1.
+\]
+
+---
+
+**Step 2: Compute \( n^2 \).**
+
+\[
+n^2 = (2k + 1)^2 = (2k + 1)(2k + 1) = 4k^2 + 4k + 1.
+\]
+
+---
+
+**Step 3: Simplify expression of \( n^2 \).**
+
+Rewrite \( n^2 \) as
+\[
+n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1.
+\]
+
+---
+
+**Step 4: Analyze parity of \( n^2 \).**
+
+Since \( 2k^2 + 2k \) is an integer, denote it by \( m \in \mathbb{Z} \). Then
+\[
+n^2 = 2m + 1,
+\]
+which is of the form ""2 times an integer plus 1"".
+
+This means that \( n^2 \) is odd.
+
+---
+
+**Step 5: Conclusion of contrapositive.**
+
+We have shown that if \( n \) is odd, then \( n^2 \) is odd.
+
+---
+
+**Step 6: Therefore, by contrapositive,**
+
+If \( n^2 \) is even, then \( n \) must be even.
+
+---
+
+**Q.E.D.**",260,26,False,False,True,False,False,False,contrapositive,,,,
+3,4,"Prove that if n^2 is even, then n is even.",number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if n^2 is even, then n is even.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** If \( n^2 \) is even, then \( n \) is even.
+
+**Proof:**
+
+We will use a proof by contrapositive. The contrapositive statement is:
+
+> If \( n \) is not even, then \( n^2 \) is not even.
+
+Since ""not even"" means ""odd,"" the contrapositive is:
+
+> If \( n \) is odd, then \( n^2 \) is odd.
+
+**Step 1:** Assume \( n \) is odd.  
+By definition of odd numbers, there exists an integer \( k \) such that:
+\[
+n = 2k + 1.
+\]
+
+**Step 2:** Compute \( n^2 \):
+\[
+n^2 = (2k + 1)^2 = (2k + 1)(2k + 1) = 4k^2 + 4k + 1.
+\]
+
+**Step 3:** Simplify \( n^2 \):
+\[
+n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1.
+\]
+
+Notice that \( 2k^2 + 2k \) is an integer because \( k \) is an integer. Let
+\[
+m = 2k^2 + 2k \in \mathbb{Z}.
+\]
+
+Thus,
+\[
+n^2 = 2m + 1.
+\]
+
+**Step 4:** Interpretation of the result  
+Since \( n^2 = 2m + 1 \), \( n^2 \) is of the form \( 2 \times \text{integer} + 1 \), which means \( n^2 \) is odd.
+
+**Step 5:** Conclusion of contrapositive  
+We have shown that if \( n \) is odd, then \( n^2 \) is odd.
+
+Since the contrapositive statement is logically equivalent to the original statement, we conclude that:
+
+> If \( n^2 \) is even, then \( n \) is even.
+
+\[
+\boxed{}
+\]
+
+**End of proof.**",260,31,False,False,True,False,False,False,contrapositive,,,,
+3,5,"Prove that if n^2 is even, then n is even.",number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if n^2 is even, then n is even.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( n^2 \) is even, then \( n \) is even.
+
+---
+
+**Proof:**  
+We want to prove:  
+\[ n^2 \text{ is even} \implies n \text{ is even} \]
+
+We will use a proof by contrapositive. The contrapositive statement of the theorem is:  
+\[
+\text{If } n \text{ is not even (i.e., odd), then } n^2 \text{ is not even (i.e., odd).}
+\]
+
+1. Assume \( n \) is odd. By definition of odd integers, there exists an integer \( k \) such that:  
+\[
+n = 2k + 1.
+\]
+
+2. Now compute \( n^2 \):  
+\[
+n^2 = (2k + 1)^2 = (2k + 1)(2k + 1) = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1.
+\]
+
+3. Notice that \( 2k^2 + 2k \) is an integer (call it \( m \)), so:  
+\[
+n^2 = 2m + 1,
+\]
+which is the definition of an odd number.
+
+4. Thus, if \( n \) is odd, then \( n^2 \) is odd.
+
+5. By contrapositive reasoning, since the contrapositive is true, the original implication is true:  
+\[
+\text{If } n^2 \text{ is even, then } n \text{ is even.}
+\]
+
+---
+
+**Q.E.D.**",199,18,False,False,True,False,False,False,contrapositive,,,,
+4,1,"Prove that sum_{k=0}^n binom(n,k)=2^n.",combinatorics,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that sum_{k=0}^n binom(n,k)=2^n.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+**Proof:**
+
+Recall the binomial coefficient \(\binom{n}{k}\) is defined as:
+\[
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+for integers \(n \geq 0\) and \(0 \leq k \leq n\).
+
+---
+
+**Step 1: Understanding the Binomial Theorem**
+
+The Binomial Theorem states that for any integer \(n \geq 0\),
+\[
+(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k.
+\]
+
+---
+
+**Step 2: Apply the Binomial Theorem with \(x = 1\) and \(y = 1\)**
+
+Substitute \(x = 1\) and \(y = 1\) into the binomial expansion:
+\[
+(1 + 1)^n = \sum_{k=0}^n \binom{n}{k} 1^{n-k} 1^k.
+\]
+
+Since \(1^{n-k} = 1\) and \(1^k = 1\) for all \(k\), this simplifies to:
+\[
+2^n = \sum_{k=0}^n \binom{n}{k}.
+\]
+
+---
+
+**Step 3: Conclusion**
+
+Therefore, we have shown that the sum of the binomial coefficients over \(k = 0\) to \(n\) is equal to \(2^n\):
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+**Q.E.D.**",151,56,False,False,False,False,False,False,construction,,,,
+4,2,"Prove that sum_{k=0}^n binom(n,k)=2^n.",combinatorics,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that sum_{k=0}^n binom(n,k)=2^n.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+**Proof:**
+
+1. **Recall the binomial coefficient definition:**  
+   For non-negative integers \( n \) and \( k \) with \( 0 \leq k \leq n \), the binomial coefficient is defined as  
+   \[
+   \binom{n}{k} = \frac{n!}{k!(n-k)!}.
+   \]
+
+2. **Consider the binomial expansion:**  
+   The binomial theorem states that for any real numbers \( x, y \) and any non-negative integer \( n \),  
+   \[
+   (x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{k} y^{n-k}.
+   \]
+
+3. **Apply the binomial theorem with special values:**  
+   Let \( x = 1 \) and \( y = 1 \). Then  
+   \[
+   (1 + 1)^n = \sum_{k=0}^n \binom{n}{k} 1^k 1^{n-k} = \sum_{k=0}^n \binom{n}{k}.
+   \]
+
+4. **Simplify the left-hand side:**  
+   Since \( 1 + 1 = 2 \), the equation becomes  
+   \[
+   2^n = \sum_{k=0}^n \binom{n}{k}.
+   \]
+
+This completes the proof.
+
+\[
+\boxed{
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+}
+\]",146,52,False,False,False,False,False,False,construction,,,,
+4,3,"Prove that sum_{k=0}^n binom(n,k)=2^n.",combinatorics,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that sum_{k=0}^n binom(n,k)=2^n.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+**Proof:**
+
+We proceed by using the **Binomial Theorem** and also provide a combinatorial interpretation for clarity.
+
+---
+
+### Proof using the Binomial Theorem:
+
+Recall the Binomial Theorem states that for any integer \( n \geq 0 \) and any real numbers \( x, y \),  
+\[
+(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k.
+\]
+
+Set \( x = 1 \) and \( y = 1 \). Then we have:  
+\[
+(1 + 1)^n = \sum_{k=0}^n \binom{n}{k} 1^{n-k} 1^k = \sum_{k=0}^n \binom{n}{k}.
+\]
+
+Since \(1^{n-k} = 1\) and \(1^k = 1\) for all \(k\), this simplifies to:  
+\[
+2^n = \sum_{k=0}^n \binom{n}{k}.
+\]
+
+Thus,  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+### Combinatorial Proof:
+
+Consider a set \( S \) with \( n \) distinct elements. We want to count the total number of subsets of \( S \).
+
+- The number of subsets of size \( k \) is \(\binom{n}{k}\).
+- The subsets of all possible sizes \( k = 0, 1, 2, \ldots, n \) partition the power set of \( S \).
+
+The total number of subsets in the power set of \( S \) is therefore:  
+\[
+\sum_{k=0}^n \binom{n}{k}.
+\]
+
+From basic set theory, the power set of an \( n \)-element set contains exactly \( 2^n \) subsets (each element is either included or excluded independently).
+
+Hence,  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+**Conclusion:**  
+Both the algebraic binomial theorem and the combinatorial argument show that  
+\[
+\boxed{\sum_{k=0}^n \binom{n}{k} = 2^n},
+\]  
+which proves the theorem.  
+\(\blacksquare\)",259,74,False,False,False,False,False,False,combinatorial,,,,
+4,4,"Prove that sum_{k=0}^n binom(n,k)=2^n.",combinatorics,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that sum_{k=0}^n binom(n,k)=2^n.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** For any non-negative integer \( n \),  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+**Proof:**
+
+We will prove this theorem using the **binomial theorem**.
+
+1. **Recall the Binomial Theorem:**
+
+   For any integer \( n \geq 0 \) and any real numbers \( x \) and \( y \),
+   \[
+   (x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k.
+   \]
+
+2. **Apply the Binomial Theorem with \( x = 1 \) and \( y = 1 \):**
+
+   Substitute \( x = 1 \) and \( y = 1 \) into the binomial expansion:
+   \[
+   (1 + 1)^n = \sum_{k=0}^n \binom{n}{k} 1^{n-k} 1^k.
+   \]
+
+3. **Simplify the powers of 1:**
+
+   Since \( 1^{m} = 1 \) for any integer \( m \),
+   \[
+   2^n = \sum_{k=0}^n \binom{n}{k} \cdot 1 \cdot 1 = \sum_{k=0}^n \binom{n}{k}.
+   \]
+
+Thus, we conclude that
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+---
+
+**Note:** An alternative proof uses combinatorial reasoning:
+
+- The left-hand side counts the total number of subsets of an \( n \)-element set by summing over all subsets of size \( k \).
+- The right-hand side counts the total number of subsets directly, since each element can either be included or excluded, giving \( 2^n \) subsets in total.
+
+---
+
+**Q.E.D.**",206,53,False,False,False,False,False,False,combinatorial,,,,
+4,5,"Prove that sum_{k=0}^n binom(n,k)=2^n.",combinatorics,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that sum_{k=0}^n binom(n,k)=2^n.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+\[
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\]
+
+**Proof:**
+
+1. **Recall the binomial coefficient definition:**  
+   For a nonnegative integer \( n \) and an integer \( k \) with \( 0 \leq k \leq n \), the binomial coefficient \(\binom{n}{k}\) is defined as  
+   \[
+   \binom{n}{k} = \frac{n!}{k!(n-k)!},
+   \]
+   where \( n! \) denotes the factorial of \( n \).
+
+2. **Consider the binomial expansion:**  
+   By the Binomial Theorem, for any real numbers \( x \) and \( y \), and any nonnegative integer \( n \),  
+   \[
+   (x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k.
+   \]
+
+3. **Apply the binomial theorem with \( x = 1 \) and \( y = 1 \):**  
+   Substituting \( x = 1 \) and \( y = 1 \), we have  
+   \[
+   (1 + 1)^n = \sum_{k=0}^n \binom{n}{k} 1^{n-k} 1^k.
+   \]
+
+4. **Simplify the powers:**  
+   Since \(1^{n-k} = 1\) and \(1^k = 1\), the equation reduces to  
+   \[
+   2^n = \sum_{k=0}^n \binom{n}{k}.
+   \]
+
+5. **Conclusion:**  
+   We have shown that the sum of binomial coefficients for \(k\) from \(0\) to \(n\) equals \(2^n\). Thus,  
+   \[
+   \boxed{\sum_{k=0}^n \binom{n}{k} = 2^n}.
+   \]
+
+**End of Proof.**",187,53,False,False,False,False,False,False,construction,,,,
+5,1,"Prove that if A and B are independent events, then A^c and B are independent.",probability,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if A and B are independent events, then A^c and B are independent.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( A \) and \( B \) are independent events, then \( A^c \) and \( B \) are independent events.
+
+---
+
+**Proof:**
+
+1. **Given:**  
+   \( A \) and \( B \) are independent. By definition of independence, this means:
+   \[
+   P(A \cap B) = P(A) \cdot P(B).
+   \]
+
+2. **To prove:**  
+   \( A^c \) and \( B \) are independent, i.e.,  
+   \[
+   P(A^c \cap B) = P(A^c) \cdot P(B).
+   \]
+
+3. **Start with the left-hand side:**  
+   Consider the event \( B \). By the law of total probability on \( B \) with respect to \( A \) and \( A^c \), the event \( B \) can be partitioned into:
+   \[
+   B = (A \cap B) \cup (A^c \cap B),
+   \]
+   and these two sets are disjoint.
+
+4. Hence,
+   \[
+   P(B) = P((A \cap B) \cup (A^c \cap B)) = P(A \cap B) + P(A^c \cap B).
+   \]
+
+5. Substitute the given independence condition \( P(A \cap B) = P(A) P(B) \):
+   \[
+   P(B) = P(A) P(B) + P(A^c \cap B).
+   \]
+
+6. Rearranging to isolate \( P(A^c \cap B) \):
+   \[
+   P(A^c \cap B) = P(B) - P(A) P(B) = P(B)(1 - P(A)).
+   \]
+
+7. Recall that:
+   \[
+   P(A^c) = 1 - P(A).
+   \]
+
+8. Therefore,
+   \[
+   P(A^c \cap B) = P(B) \cdot P(A^c).
+   \]
+
+9. This shows:
+   \[
+   P(A^c \cap B) = P(A^c) \cdot P(B),
+   \]
+   which means \( A^c \) and \( B \) are independent.
+
+---
+
+**Conclusion:**  
+We have rigorously demonstrated that if \( A \) and \( B \) are independent events, then the complement \( A^c \) and \( B \) must also be independent.
+
+\[
+\boxed{
+\text{Q.E.D.}
+}
+\]",280,30,False,False,False,False,False,False,probabilistic,,,,
+5,2,"Prove that if A and B are independent events, then A^c and B are independent.",probability,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if A and B are independent events, then A^c and B are independent.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( A \) and \( B \) are independent events, then \( A^c \) and \( B \) are independent events.
+
+---
+
+**Proof:**
+
+1. **Given:**  
+   Events \( A \) and \( B \) are independent. By definition, this means:  
+   \[
+   P(A \cap B) = P(A) P(B).
+   \]
+
+2. **Goal:**  
+   Show that \( A^c \) and \( B \) are independent, i.e.,  
+   \[
+   P(A^c \cap B) = P(A^c) P(B).
+   \]
+
+3. **Express \( P(A^c \cap B) \):**  
+   Using the fact that \( B = (A \cap B) \cup (A^c \cap B) \) and these two sets are disjoint, we have  
+   \[
+   P(B) = P((A \cap B) \cup (A^c \cap B)) = P(A \cap B) + P(A^c \cap B).
+   \]  
+   Hence,  
+   \[
+   P(A^c \cap B) = P(B) - P(A \cap B).
+   \]
+
+4. **Substitute \( P(A \cap B) \) using independence of \( A \) and \( B \):**  
+   Since \( P(A \cap B) = P(A)P(B) \),  
+   \[
+   P(A^c \cap B) = P(B) - P(A) P(B) = P(B) (1 - P(A)).
+   \]
+
+5. **Recall that:**  
+   \[
+   P(A^c) = 1 - P(A).
+   \]
+
+6. **Therefore:**  
+   \[
+   P(A^c \cap B) = P(B) (1 - P(A)) = P(B) P(A^c).
+   \]
+
+7. **Conclusion:**  
+   By definition of independence, since  
+   \[
+   P(A^c \cap B) = P(A^c) P(B),
+   \]  
+   the events \( A^c \) and \( B \) are independent.
+
+---
+
+**Q.E.D.**",225,29,False,False,False,False,False,False,probabilistic,,,,
+5,3,"Prove that if A and B are independent events, then A^c and B are independent.",probability,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if A and B are independent events, then A^c and B are independent.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( A \) and \( B \) are independent events, then \( A^c \) and \( B \) are independent.
+
+---
+
+**Proof:**
+
+Recall that two events \( A \) and \( B \) are independent if and only if  
+\[
+P(A \cap B) = P(A) P(B).
+\]
+
+Given that \( A \) and \( B \) are independent, we have  
+\[
+P(A \cap B) = P(A) P(B).
+\]
+
+We want to show that \( A^c \) and \( B \) are independent, that is,  
+\[
+P(A^c \cap B) = P(A^c) P(B).
+\]
+
+**Step 1:** Express \( P(A^c \cap B) \) in terms of \( P(B) \) and \( P(A \cap B) \).
+
+Since \( B = (A \cap B) \cup (A^c \cap B) \) and these two sets are disjoint,  
+\[
+P(B) = P(A \cap B) + P(A^c \cap B).
+\]
+
+Rearranging,  
+\[
+P(A^c \cap B) = P(B) - P(A \cap B).
+\]
+
+**Step 2:** Substitute the known relation for \( P(A \cap B) \).
+
+Since \( A \) and \( B \) are independent,  
+\[
+P(A \cap B) = P(A) P(B).
+\]
+
+Hence,  
+\[
+P(A^c \cap B) = P(B) - P(A) P(B) = P(B)(1 - P(A)).
+\]
+
+**Step 3:** Express \( P(A^c) \) and substitute.
+
+By definition of complement,  
+\[
+P(A^c) = 1 - P(A).
+\]
+
+Therefore,  
+\[
+P(A^c \cap B) = P(B)(1 - P(A)) = P(B) P(A^c).
+\]
+
+---
+
+**Conclusion:**  
+Since  
+\[
+P(A^c \cap B) = P(A^c) P(B),
+\]  
+events \( A^c \) and \( B \) are independent.
+
+\[
+\boxed{
+\text{Q.E.D.}
+}
+\]",258,29,False,False,False,False,False,False,probabilistic,,,,
+5,4,"Prove that if A and B are independent events, then A^c and B are independent.",probability,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if A and B are independent events, then A^c and B are independent.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( A \) and \( B \) are independent events, then \( A^c \) and \( B \) are independent.
+
+---
+
+**Proof:**
+
+Recall that two events \( A \) and \( B \) are independent if and only if  
+\[
+P(A \cap B) = P(A) \cdot P(B).
+\]
+
+Given that \( A \) and \( B \) are independent, we have:  
+\[
+P(A \cap B) = P(A) P(B).
+\]
+
+We want to prove that \( A^c \) and \( B \) are independent, i.e.,  
+\[
+P(A^c \cap B) = P(A^c) P(B).
+\]
+
+---
+
+**Step 1: Use the complement rule on \( A \) and the intersection with \( B \).**
+
+Note that \( B = (A \cap B) \cup (A^c \cap B) \) and these two sets are mutually exclusive (disjoint). Therefore,  
+\[
+P(B) = P((A \cap B) \cup (A^c \cap B)) = P(A \cap B) + P(A^c \cap B).
+\]
+
+Rearranging,  
+\[
+P(A^c \cap B) = P(B) - P(A \cap B).
+\]
+
+---
+
+**Step 2: Substitute the independence condition.**
+
+Since \( A \) and \( B \) are independent, substitute \( P(A \cap B) = P(A) P(B) \) into the equation:  
+\[
+P(A^c \cap B) = P(B) - P(A) P(B) = P(B)(1 - P(A)).
+\]
+
+---
+
+**Step 3: Use the complement probability for \( A \).**
+
+Recall that \( P(A^c) = 1 - P(A) \), so  
+\[
+P(A^c \cap B) = P(B) P(A^c).
+\]
+
+---
+
+**Step 4: Conclusion.**
+
+Since \( P(A^c \cap B) = P(A^c) P(B) \), by definition, \( A^c \) and \( B \) are independent events.
+
+---
+
+**End of proof.**",266,28,False,False,False,False,False,False,probabilistic,,,,
+5,5,"Prove that if A and B are independent events, then A^c and B are independent.",probability,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that if A and B are independent events, then A^c and B are independent.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+If \( A \) and \( B \) are independent events, then \( A^c \) and \( B \) are independent.
+
+---
+
+**Proof:**
+
+1. **Given:** \( A \) and \( B \) are independent events. By definition, this means:
+   \[
+   P(A \cap B) = P(A) \cdot P(B).
+   \]
+
+2. **Goal:** To show \( A^c \) and \( B \) are independent, we need to prove:
+   \[
+   P(A^c \cap B) = P(A^c) \cdot P(B).
+   \]
+
+3. **Recall:**  
+   The complement \( A^c \) is the event that \( A \) does not occur. Since the events \( A \) and \( A^c \) are disjoint and cover the entire sample space,
+   \[
+   P(A^c) = 1 - P(A).
+   \]
+
+4. **Express \( P(A^c \cap B) \) using properties of probability:**
+   Because \( A \) and \( A^c \) are mutually exclusive and their union is the entire sample space,
+   \[
+   B = (A \cap B) \cup (A^c \cap B),
+   \]
+   and the two sets on the right are disjoint. Therefore,
+   \[
+   P(B) = P((A \cap B) \cup (A^c \cap B)) = P(A \cap B) + P(A^c \cap B).
+   \]
+
+5. **Substitute \( P(A \cap B) \) using independence:**
+   \[
+   P(B) = P(A) \cdot P(B) + P(A^c \cap B).
+   \]
+
+6. **Solve for \( P(A^c \cap B) \):**
+   \[
+   P(A^c \cap B) = P(B) - P(A) \cdot P(B) = P(B)(1 - P(A)) = P(B) \cdot P(A^c).
+   \]
+
+7. **Conclusion:**
+   Since
+   \[
+   P(A^c \cap B) = P(A^c) \cdot P(B),
+   \]
+   the events \( A^c \) and \( B \) are independent.
+
+---
+
+**Q.E.D.**",259,30,False,False,False,False,False,False,probabilistic,,,,
+6,1,Prove that every convergent sequence is bounded.,analysis,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every convergent sequence is bounded.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every convergent sequence is bounded.
+
+**Proof:**
+
+Let \((a_n)\) be a sequence that converges to a limit \(L \in \mathbb{R}\). By the definition of convergence, for every \(\epsilon > 0\), there exists a natural number \(N\) such that for all \(n \geq N\),  
+\[
+|a_n - L| < \epsilon.
+\]
+
+Set \(\epsilon = 1\). Then, there exists \(N \in \mathbb{N}\) such that for all \(n \geq N\),
+\[
+|a_n - L| < 1.
+\]
+
+This implies that for all \(n \geq N\),
+\[
+|a_n| = |a_n - L + L| \leq |a_n - L| + |L| < 1 + |L|.
+\]
+
+Now consider the finite set \(\{a_1, a_2, \ldots, a_{N-1}\}\). Since it is finite, it is bounded. Let
+\[
+M_1 = \max \{ |a_1|, |a_2|, \ldots, |a_{N-1}| \}.
+\]
+
+Define
+\[
+M = \max(M_1, 1 + |L|).
+\]
+
+Then for all \(n \in \mathbb{N}\),
+\[
+|a_n| \leq M.
+\]
+
+Hence, the sequence \((a_n)\) is bounded.
+
+\(\boxed{\text{Q.E.D.}}\)",156,29,False,False,False,False,False,False,construction,,,,
+6,2,Prove that every convergent sequence is bounded.,analysis,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every convergent sequence is bounded.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every convergent sequence is bounded.
+
+**Proof:**
+
+Let \((a_n)\) be a sequence that converges to some limit \(L \in \mathbb{R}\). By the definition of convergence, for every \(\varepsilon > 0\), there exists a natural number \(N\) such that for all \(n \geq N\),
+\[
+|a_n - L| < \varepsilon.
+\]
+
+Choose \(\varepsilon = 1\). Then there exists \(N \in \mathbb{N}\) such that for all \(n \geq N\),
+\[
+|a_n - L| < 1.
+\]
+
+From this inequality, we have
+\[
+|a_n| = |a_n - L + L| \leq |a_n - L| + |L| < 1 + |L|.
+\]
+
+Thus, for all \(n \geq N\),
+\[
+|a_n| < 1 + |L|.
+\]
+
+Now consider the finite set of terms before the index \(N\), i.e., \(a_1, a_2, \ldots, a_{N-1}\). Since this is a finite set, it has a maximum absolute value. Let
+\[
+M_1 = \max \{ |a_1|, |a_2|, \ldots, |a_{N-1}| \}.
+\]
+
+Define
+\[
+M = \max \{ M_1, 1 + |L| \}.
+\]
+
+Then for every \(n \in \mathbb{N}\),
+\[
+|a_n| \leq M.
+\]
+
+Therefore, the sequence \((a_n)\) is bounded.
+
+\[
+\boxed{}
+\]
+
+**End of proof.**",186,31,False,False,False,False,False,False,construction,,,,
+6,3,Prove that every convergent sequence is bounded.,analysis,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every convergent sequence is bounded.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+Every convergent sequence is bounded.
+
+**Proof:**  
+Let \((a_n)\) be a sequence that converges to some limit \(L \in \mathbb{R}\). By the definition of convergence, we have:
+
+\[
+\lim_{n \to \infty} a_n = L.
+\]
+
+This means that for every \(\varepsilon > 0\), there exists a natural number \(N \in \mathbb{N}\) such that for all \(n \geq N\),
+
+\[
+|a_n - L| < \varepsilon.
+\]
+
+Choose \(\varepsilon = 1\). Then there exists \(N \in \mathbb{N}\) such that for all \(n \geq N\),
+
+\[
+|a_n - L| < 1.
+\]
+
+From this inequality, we can deduce:
+
+\[
+|a_n| = |a_n - L + L| \leq |a_n - L| + |L| < 1 + |L|.
+\]
+
+Thus, for all \(n \geq N\),
+
+\[
+|a_n| < M_1 := 1 + |L|.
+\]
+
+Now consider the finitely many terms before index \(N\), that is, the terms \(a_1, a_2, \ldots, a_{N-1}\). Since these are a finite set of real numbers, their absolute values are bounded. Let
+
+\[
+M_2 := \max \{|a_1|, |a_2|, \ldots, |a_{N-1}|\}.
+\]
+
+Define
+
+\[
+M := \max\{M_1, M_2\}.
+\]
+
+Then for every \(n \in \mathbb{N}\),
+
+- If \(n \geq N\), then \(|a_n| < M_1 \leq M\).
+- If \(n < N\), then \(|a_n| \leq M_2 \leq M\).
+
+Therefore, for all \(n \in \mathbb{N}\),
+
+\[
+|a_n| \leq M.
+\]
+
+This shows that the sequence \((a_n)\) is bounded by \(M\).
+
+\[
+\boxed{
+\text{Hence, every convergent sequence is bounded.}
+}
+\]
+
+\(\blacksquare\)",237,47,False,False,False,False,False,False,construction,,,,
+6,4,Prove that every convergent sequence is bounded.,analysis,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every convergent sequence is bounded.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every convergent sequence is bounded.
+
+**Proof:**
+
+Let \((a_n)\) be a sequence of real numbers that converges to some limit \(L \in \mathbb{R}\). By definition of convergence, for every \(\varepsilon > 0\), there exists a positive integer \(N\) such that for all \(n \geq N\),
+
+\[
+|a_n - L| < \varepsilon.
+\]
+
+We want to show that the sequence \((a_n)\) is bounded; that is, there exists some constant \(M > 0\) such that for all \(n \in \mathbb{N}\),
+
+\[
+|a_n| \leq M.
+\]
+
+---
+
+**Step 1.** Choose \(\varepsilon = 1\). Since \((a_n)\) converges to \(L\), there exists \(N \in \mathbb{N}\) such that for all \(n \geq N\),
+
+\[
+|a_n - L| < 1.
+\]
+
+---
+
+**Step 2.** For \(n \geq N\), by the triangle inequality,
+
+\[
+|a_n| = |a_n - L + L| \leq |a_n - L| + |L| < 1 + |L|.
+\]
+
+---
+
+**Step 3.** Consider the finitely many terms before the index \(N\), i.e., \(a_1, a_2, \ldots, a_{N-1}\). Since this is a finite set, it has a maximum absolute value:
+
+\[
+M_1 = \max \{|a_1|, |a_2|, \ldots, |a_{N-1}|\}.
+\]
+
+---
+
+**Step 4.** Define
+
+\[
+M = \max \{ M_1, 1 + |L| \}.
+\]
+
+Then for all \(n \in \mathbb{N}\),
+
+- if \(n < N\), then \(|a_n| \leq M_1 \leq M\),
+- if \(n \geq N\), then \(|a_n| < 1 + |L| \leq M\).
+
+Therefore, for all \(n\),
+
+\[
+|a_n| \leq M.
+\]
+
+This shows the sequence \((a_n)\) is bounded.
+
+---
+
+**Conclusion:** Every convergent sequence is bounded.
+
+\(\boxed{\text{Q.E.D.}}\)",251,43,False,False,False,False,False,False,construction,,,,
+6,5,Prove that every convergent sequence is bounded.,analysis,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every convergent sequence is bounded.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every convergent sequence is bounded.
+
+**Proof:**
+
+Let \((a_n)\) be a sequence that converges to some limit \(L \in \mathbb{R}\). By the definition of convergence, for every \(\varepsilon > 0\), there exists a natural number \(N \in \mathbb{N}\) such that for all \(n \geq N\),  
+\[
+|a_n - L| < \varepsilon.
+\]
+
+Choose \(\varepsilon = 1\). Then, there exists \(N \in \mathbb{N}\) such that for all \(n \geq N\),  
+\[
+|a_n - L| < 1.
+\]
+
+From this inequality, we have for all \(n \geq N\),  
+\[
+|a_n| = |a_n - L + L| \leq |a_n - L| + |L| < 1 + |L|.
+\]
+
+Now consider the finite set of terms \(\{a_1, a_2, \ldots, a_{N-1}\}\). Since this set is finite, let  
+\[
+M_1 = \max \{|a_1|, |a_2|, \ldots, |a_{N-1}|\}.
+\]
+
+Define  
+\[
+M = \max \{M_1, 1 + |L|\}.
+\]
+
+Then, for every \(n \in \mathbb{N}\),  
+- If \(n \geq N\), then \(|a_n| < 1 + |L| \leq M\).  
+- If \(n < N\), then \(|a_n| \leq M_1 \leq M\).
+
+Hence, for all \(n \in \mathbb{N}\),  
+\[
+|a_n| \leq M,
+\]
+which means the sequence \((a_n)\) is bounded.
+
+**Q.E.D.**",190,38,False,False,False,False,False,False,construction,,,,
+7,1,Prove that every finite integral domain is a field.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every finite integral domain is a field.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every finite integral domain is a field.
+
+---
+
+**Proof:**
+
+Let \( R \) be a finite integral domain. We want to show that \( R \) is a field, i.e., every nonzero element of \( R \) has a multiplicative inverse.
+
+---
+
+**Step 1: Recall the definitions**
+
+- An **integral domain** is a commutative ring with unity \( 1 \neq 0 \) and no zero divisors. Concretely, for \( a, b \in R \), if \( ab = 0 \), then either \( a = 0 \) or \( b = 0 \).
+- A **field** is a commutative ring with unity such that every nonzero element has a multiplicative inverse.
+
+Since \( R \) is an integral domain, we already know it has no zero divisors and is commutative with unity.
+
+---
+
+**Step 2: Let \( a \in R \) with \( a \neq 0 \). We want to show \( a \) is invertible.**
+
+Consider the function
+\[
+f_a : R \to R, \quad f_a(x) = a x.
+\]
+
+Because \( R \) is commutative, this map is well-defined and respects the ring structure in terms of multiplication by \( a \).
+
+---
+
+**Step 3: Show \( f_a \) is injective**
+
+Suppose \( f_a(x) = f_a(y) \) for some \( x, y \in R \). Then
+\[
+a x = a y.
+\]
+Subtracting,
+\[
+a x - a y = a (x - y) = 0.
+\]
+
+But \( R \) is an integral domain, so since \( a \neq 0 \), it must be that
+\[
+x - y = 0 \implies x = y.
+\]
+
+Hence, \( f_a \) is injective.
+
+---
+
+**Step 4: Use finiteness to conclude \( f_a \) is surjective**
+
+Since \( R \) is finite and \( f_a \) is injective as a function from the finite set \( R \) to itself, \( f_a \) must also be surjective (an injective function from a finite set to itself is bijective).
+
+Therefore, there exists some \( x \in R \) such that
+\[
+f_a(x) = a x = 1.
+\]
+
+This \( x \) is the multiplicative inverse of \( a \).
+
+---
+
+**Step 5: Conclude \( R \) is a field**
+
+Since \( a \in R \setminus \{0\} \) was arbitrary, every nonzero element in \( R \) has a multiplicative inverse. Hence, \( R \) is a field.
+
+---
+
+\[
+\boxed{
+\text{Every finite integral domain is a field.}
+}
+\]
+
+**Q.E.D.**",413,22,False,False,False,False,False,False,construction,,,,
+7,2,Prove that every finite integral domain is a field.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every finite integral domain is a field.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every finite integral domain is a field.
+
+---
+
+**Proof:**
+
+Let \( R \) be a finite integral domain. We want to show that \( R \) is a field, i.e., every nonzero element in \( R \) has a multiplicative inverse.
+
+**Step 1: Recall definitions**
+
+- An **integral domain** is a commutative ring with unity \( 1 \neq 0 \) and no zero divisors.
+- A **field** is a commutative ring with unity in which every nonzero element has a multiplicative inverse.
+
+Since \( R \) is an integral domain, it is commutative, has identity \( 1 \neq 0 \), and no zero divisors.
+
+**Step 2: Take an arbitrary nonzero element**
+
+Let \( a \in R \) with \( a \neq 0 \). We want to prove there exists an element \( b \in R \) such that
+
+\[
+a \cdot b = b \cdot a = 1.
+\]
+
+**Step 3: Consider the function of multiplication by \( a \)**
+
+Define a function
+
+\[
+f_a : R \to R, \quad f_a(r) = a \cdot r.
+\]
+
+Because \( R \) is commutative, this is well-defined and respects the ring structure.
+
+**Step 4: Show that \( f_a \) is injective**
+
+Suppose
+
+\[
+f_a(r_1) = f_a(r_2),
+\]
+
+i.e.,
+
+\[
+a \cdot r_1 = a \cdot r_2.
+\]
+
+Then,
+
+\[
+a \cdot (r_1 - r_2) = 0.
+\]
+
+Since \( R \) is an integral domain, there are no zero divisors, and \( a \neq 0 \), so
+
+\[
+r_1 - r_2 = 0 \implies r_1 = r_2.
+\]
+
+Hence, \( f_a \) is injective.
+
+**Step 5: Use finiteness to conclude that \( f_a \) is surjective**
+
+Since \( R \) is finite and \( f_a \) is an injective function from \( R \) to itself, \( f_a \) is also surjective (injective functions on finite sets are bijections). Hence, there exists some \( r \in R \) such that
+
+\[
+f_a(r) = a \cdot r = 1.
+\]
+
+**Step 6: Conclude the existence of the multiplicative inverse**
+
+The element \( r \) satisfies
+
+\[
+a \cdot r = 1,
+\]
+
+so \( r \) is the multiplicative inverse of \( a \).
+
+Since \( a \neq 0 \) was arbitrary, every nonzero element of \( R \) has a multiplicative inverse.
+
+---
+
+**Conclusion:**  
+Because every nonzero element of the finite integral domain \( R \) has a multiplicative inverse, \( R \) is a field.
+
+\[
+\boxed{
+\text{Every finite integral domain is a field.}
+}
+\]
+
+**Q.E.D.**",417,31,False,False,False,True,False,False,bijection,,,,
+7,3,Prove that every finite integral domain is a field.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every finite integral domain is a field.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every finite integral domain is a field.
+
+---
+
+**Proof:**
+
+Let \( R \) be a finite integral domain. We want to prove that \( R \) is a field. Recall the definitions:
+
+- An **integral domain** is a commutative ring with unity \(1 \neq 0\) that has no zero divisors; that is, if \( ab = 0 \) in \( R \), then either \( a = 0 \) or \( b = 0 \).
+- A **field** is a commutative ring with unity in which every nonzero element has a multiplicative inverse.
+
+---
+
+**Step 1: Setup**
+
+Since \( R \) is finite, let \( |R| = n \).
+
+We want to show every nonzero element \( a \in R \) has a multiplicative inverse.
+
+---
+
+**Step 2: Consider a nonzero element \( a \in R \).**
+
+Define the function
+\[
+f_a : R \to R
+\]
+by
+\[
+f_a(x) = a \cdot x
+\]
+for all \( x \in R \).
+
+---
+
+**Step 3: Show \( f_a \) is injective**
+
+Suppose \( f_a(x) = f_a(y) \), i.e.,
+\[
+a \cdot x = a \cdot y.
+\]
+
+Then
+\[
+a \cdot x - a \cdot y = a \cdot (x - y) = 0.
+\]
+
+Since \( R \) is an integral domain and \( a \neq 0 \), the product \( a \cdot (x-y) = 0 \) implies
+\[
+x - y = 0 \implies x = y.
+\]
+
+Therefore, \( f_a \) is injective.
+
+---
+
+**Step 4: Use finiteness of \( R \) to conclude \( f_a \) is surjective**
+
+Because \( R \) is a finite set and \( f_a \) is an injective function from \( R \) to itself, it must also be surjective (a one-to-one function on a finite set is onto).
+
+Hence, for the element \( 1 \in R \), there exists \( b \in R \) such that
+\[
+f_a(b) = a \cdot b = 1.
+\]
+
+---
+
+**Step 5: Conclusion**
+
+Since \( b \) is such that \( a \cdot b = 1 \), \( b \) is the multiplicative inverse of \( a \).
+
+Because \( a \) was an arbitrary nonzero element of \( R \), every nonzero element in \( R \) has a multiplicative inverse.
+
+---
+
+**Therefore, \( R \) is a field.**
+
+---
+
+**Q.E.D.**",389,24,False,False,False,False,False,False,construction,,,,
+7,4,Prove that every finite integral domain is a field.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every finite integral domain is a field.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every finite integral domain is a field.
+
+---
+
+**Proof:**
+
+Let \( R \) be a finite integral domain. We want to show that \( R \) is a field; that is, every nonzero element of \( R \) has a multiplicative inverse.
+
+---
+
+**Step 1: Definitions and setup**
+
+- An **integral domain** \( R \) is a commutative ring with unity \( 1 \neq 0 \) and no zero divisors. Formally, for any \( a, b \in R \), if \( ab = 0 \), then either \( a = 0 \) or \( b = 0 \).
+
+- A **field** is a commutative ring with unity in which every nonzero element has a multiplicative inverse.
+
+We assume \( R \) is finite and an integral domain, and we want to prove that for every \( a \in R \setminus \{0\} \), there exists \( b \in R \) such that \( ab = 1 \).
+
+---
+
+**Step 2: Consider an arbitrary nonzero element**
+
+Let \( a \in R \) with \( a \neq 0 \).
+
+Define the function \( f_a: R \to R \) by:
+\[
+f_a(x) = a \cdot x
+\]
+for all \( x \in R \).
+
+---
+
+**Step 3: Show that \( f_a \) is injective**
+
+Suppose \( f_a(x_1) = f_a(x_2) \) for some \( x_1, x_2 \in R \). Then
+\[
+a \cdot x_1 = a \cdot x_2.
+\]
+Because \( R \) is commutative, subtracting, we get:
+\[
+a \cdot (x_1 - x_2) = 0.
+\]
+
+Since \( R \) is an integral domain and \( a \neq 0 \), the product \( a \cdot (x_1 - x_2) = 0 \) implies
+\[
+x_1 - x_2 = 0,
+\]
+or equivalently,
+\[
+x_1 = x_2.
+\]
+
+Thus, \( f_a \) is injective.
+
+---
+
+**Step 4: Use finiteness to conclude surjectivity**
+
+Since \( R \) is finite and \( f_a: R \to R \) is injective, it must also be surjective (injective functions from a finite set to itself are bijections). Therefore,
+\[
+\exists b \in R \text{ such that } f_a(b) = a \cdot b = 1.
+\]
+
+---
+
+**Step 5: Conclusion**
+
+We have shown that for every nonzero \( a \in R \), there exists \( b \in R \) such that
+\[
+a \cdot b = 1.
+\]
+
+Therefore, every nonzero element of \( R \) has a multiplicative inverse, and thus \( R \) is a field.
+
+---
+
+**Q.E.D.**",409,36,False,False,False,True,False,False,bijection,,,,
+7,5,Prove that every finite integral domain is a field.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every finite integral domain is a field.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every finite integral domain is a field.
+
+---
+
+**Proof:**
+
+Let \(D\) be a finite integral domain. We want to prove that \(D\) is a field, i.e., every nonzero element of \(D\) has a multiplicative inverse in \(D\).
+
+---
+
+**Step 1: Definitions and setup**
+
+- An **integral domain** is a commutative ring with unity \(1 \neq 0\) and no zero divisors.
+- A **field** is a commutative ring with unity in which every nonzero element is a unit (has a multiplicative inverse).
+- Since \(D\) is finite, let \(|D| = n\).
+
+---
+
+**Step 2: Consider an arbitrary nonzero element**
+
+Let \(a \in D\) and \(a \neq 0\). We want to show there exists \(b \in D\) such that \(ab = 1\).
+
+---
+
+**Step 3: Define the multiplication map**
+
+Define the map 
+\[
+f_a : D \to D, \quad f_a(x) = a x.
+\]
+
+---
+
+**Step 4: Show \(f_a\) is injective**
+
+Suppose \(f_a(x) = f_a(y)\) for some \(x, y \in D\). Then
+\[
+a x = a y \implies a(x - y) = 0.
+\]
+
+Since \(D\) is an integral domain and \(a \neq 0\), the product \(a(x - y) = 0\) implies
+\[
+x - y = 0 \implies x = y.
+\]
+
+Thus, \(f_a\) is injective.
+
+---
+
+**Step 5: Use finiteness to conclude surjectivity**
+
+Because \(D\) is finite and \(f_a\) is injective, \(f_a\) must also be surjective. (This follows from the pigeonhole principle: an injective map from a finite set to itself is bijective.)
+
+---
+
+**Step 6: Existence of the inverse**
+
+Since \(f_a\) is surjective, there exists some \(b \in D\) such that
+\[
+f_a(b) = a b = 1.
+\]
+
+Hence, \(b\) is the multiplicative inverse of \(a\).
+
+---
+
+**Step 7: Conclusion**
+
+Since \(a \in D\) was an arbitrary nonzero element and we found \(b \in D\) such that \(ab = 1\), every nonzero element of \(D\) is invertible.
+
+Therefore, \(D\) is a field.
+
+---
+
+**Q.E.D.**",318,22,False,False,False,False,False,False,construction,,,,
+8,1,Prove that every subgroup of a cyclic group is cyclic.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every subgroup of a cyclic group is cyclic.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every subgroup of a cyclic group is cyclic.
+
+---
+
+**Proof:**
+
+Let \( G \) be a cyclic group. By definition, there exists an element \( g \in G \) such that 
+\[
+G = \langle g \rangle = \{ g^n : n \in \mathbb{Z} \}.
+\]
+
+Let \( H \) be a subgroup of \( G \). We want to show that \( H \) is cyclic.
+
+---
+
+**Step 1:** Consider the case when \( H = \{e\} \), where \( e \) is the identity element of \( G \).
+
+- In this case, \( H \) is cyclic since \( H = \langle e \rangle \).
+
+---
+
+**Step 2:** Now assume \( H \neq \{e\} \).
+
+- Since \( H \subseteq G = \langle g \rangle \), every element of \( H \) can be written as \( g^m \) for some integer \( m \).
+
+- Define the set 
+\[
+S = \{ n \in \mathbb{Z}^+ : g^n \in H \},
+\]
+where \(\mathbb{Z}^+\) denotes the positive integers.
+
+- Note that \( S \) is nonempty because \( H \neq \{e\} \) and \( H \) contains some element \( g^m \neq e \). If \( g^m \in H \), then either \( m > 0 \) or \( -m > 0 \). Because \( H \) is a group, \( g^{-m} = (g^m)^{-1} \in H \), so at least one of \( m \) or \( -m \) is positive, so \( S \neq \emptyset \).
+
+---
+
+**Step 3:** Since \( S \) is a nonempty subset of the positive integers, by the well-ordering principle, \( S \) has a least element. Let
+\[
+d = \min S.
+\]
+
+---
+
+**Step 4:** We claim that 
+\[
+H = \langle g^d \rangle.
+\]
+
+- First, \( g^d \in H \) by definition of \( d \).
+
+- Since \( H \) is a subgroup, \( \langle g^d \rangle \subseteq H \).
+
+- To show the reverse inclusion \( H \subseteq \langle g^d \rangle \), take any element \( h \in H \).
+
+- Since \( h \in G = \langle g \rangle \), there exists an integer \( m \) such that
+\[
+h = g^m.
+\]
+
+---
+
+**Step 5:** Use the division algorithm on \( m \) with divisor \( d \):
+
+\[
+m = qd + r,
+\]
+where \( q, r \in \mathbb{Z} \) and \( 0 \leq r < d \).
+
+Then,
+\[
+h = g^m = g^{qd + r} = g^{qd} g^r = (g^d)^q g^r.
+\]
+
+Since \( h \in H \) and \( (g^d)^q \in \langle g^d \rangle \subseteq H \), it follows that
+\[
+g^r = h (g^d)^{-q} \in H.
+\]
+
+---
+
+**Step 6:** But \( r \) is a nonnegative integer less than \( d \).
+
+- If \( r > 0 \), then \( g^r \in H \) and \( r \in S \), contradicting the minimality of \( d \).
+
+- Therefore, \( r = 0 \).
+
+---
+
+**Step 7:** Since \( r = 0 \), 
+\[
+h = (g^d)^q \in \langle g^d \rangle.
+\]
+
+This shows \( H \subseteq \langle g^d \rangle \).
+
+---
+
+**Conclusion:**
+
+We have shown that
+\[
+H = \langle g^d \rangle,
+\]
+hence \( H \) is cyclic. This completes the proof.
+
+\[
+\boxed{}
+\]",554,60,False,False,False,False,True,False,casework,,,,
+8,2,Prove that every subgroup of a cyclic group is cyclic.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every subgroup of a cyclic group is cyclic.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every subgroup of a cyclic group is cyclic.
+
+---
+
+**Proof:**
+
+Let \( G \) be a cyclic group and \( H \leq G \) a subgroup of \( G \). We want to show that \( H \) is cyclic.
+
+Since \( G \) is cyclic, there exists an element \( g \in G \) such that
+\[
+G = \langle g \rangle = \{ g^n \mid n \in \mathbb{Z} \}.
+\]
+
+---
+
+**Step 1: Consider the subgroup \(H\)**
+
+Since \( H \leq G \), every element \( h \in H \) can be written as \( h = g^m \) for some integer \( m \).
+
+---
+
+**Step 2: Define the set of exponents**
+
+Consider the set of integers
+\[
+S = \{ n \in \mathbb{Z} : g^n \in H \}.
+\]
+
+By definition of \(H\), \(S\) is the set of all integers \(n\) such that \(g^n\) lies in \(H\).
+
+---
+
+**Step 3: Properties of \(S\)**
+
+- Note that \(0 \in S\) because \(g^0 = e \in H\), where \(e\) is the identity element.
+  
+- Since \(H\) is a subgroup (and hence closed under inverses), if \(n \in S\), then \(-n \in S\).
+
+- Since \(H\) is closed under the group operation, if \(m, n \in S\), then \(m + n \in S\).
+
+Thus, \(S\) is a subgroup of \((\mathbb{Z}, +)\), the integers under addition.
+
+---
+
+**Step 4: \(S\) as a subgroup of \(\mathbb{Z}\)**
+
+It is a well-known fact that the subgroups of \(\mathbb{Z}\) are of the form
+\[
+d\mathbb{Z} = \{ dk : k \in \mathbb{Z} \},
+\]
+for some nonnegative integer \( d \geq 0 \).
+
+---
+
+**Step 5: Identify the generator of \(H\)**
+
+- If \(H = \{e\}\), then \(S = \{0\}\), and \(H = \langle g^0 \rangle\) is cyclic.
+
+- If \(H\) is nontrivial, then \(S = d\mathbb{Z}\) for some smallest positive integer \(d\).
+
+Hence,
+\[
+S = \{ dn : n \in \mathbb{Z} \}.
+\]
+
+---
+
+**Step 6: Show \(H = \langle g^d \rangle\)**
+
+For any \(h \in H\), we have \(h = g^n\) for some \(n \in S\), so \(n = dk\) for some integer \(k\). Thus,
+\[
+h = g^n = g^{dk} = (g^d)^k.
+\]
+
+This shows every element of \(H\) is a power of \(g^d\), so
+\[
+H \subseteq \langle g^d \rangle.
+\]
+
+Conversely, since \(g^d \in H\), all powers of \(g^d\) lie in \(H\), so
+\[
+\langle g^d \rangle \subseteq H.
+\]
+
+Combining these,
+\[
+H = \langle g^d \rangle,
+\]
+which means \(H\) is cyclic, generated by \(g^d\).
+
+---
+
+**Conclusion:**
+
+Every subgroup \(H\) of a cyclic group \(G = \langle g \rangle\) is itself cyclic, generated by \(g^d\) where \(d\) is the smallest positive integer such that \(g^d \in H\).
+
+**Q.E.D.**",453,43,False,False,False,False,False,True,construction,,,,
+8,3,Prove that every subgroup of a cyclic group is cyclic.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every subgroup of a cyclic group is cyclic.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every subgroup of a cyclic group is cyclic.
+
+---
+
+**Proof:**
+
+Let \( G \) be a cyclic group, and let \( H \) be a subgroup of \( G \).
+
+Because \( G \) is cyclic, there exists an element \( g \in G \) such that
+\[
+G = \langle g \rangle = \{ g^n \mid n \in \mathbb{Z} \}.
+\]
+
+We want to prove that \( H \) is cyclic.
+
+---
+
+**Case 1: \( H = \{ e \} \) is the trivial subgroup**
+
+If \( H = \{ e \} \), then \( H = \langle e \rangle \) is cyclic by definition, generated by the identity element \( e \). The theorem holds in this case.
+
+---
+
+**Case 2: \( H \neq \{ e \} \)**
+
+Since \( H \) is a subgroup of \( G \), it consists of some powers of \( g \). Because \( H \neq \{ e \} \), \( H \) contains some element \( g^m \neq e \). Consider the set
+\[
+S = \{ n \in \mathbb{Z} \mid g^n \in H \}.
+\]
+
+Since \( g^0 = e \in H \), the set \( S \) is a nonempty subset of integers containing 0. Also, because \( H \) is closed under inverses, if \( n \in S \), then \( -n \in S \).
+
+Since \( H \neq \{ e \} \), there exist nonzero integers in \( S \). Let
+\[
+m = \min \{ n \in \mathbb{N} \mid n > 0, g^n \in H \}
+\]
+be the smallest positive integer such that \( g^m \in H \). Such an \( m \) exists by the well-ordering principle, because the positive integers in \( S \) form a nonempty subset of \( \mathbb{N} \).
+
+---
+
+**Claim:** \( H = \langle g^m \rangle \).
+
+---
+
+**Proof of claim:**
+
+1. **\( \langle g^m \rangle \subseteq H \):**
+
+By definition of \( m \), \( g^m \in H \), and since \( H \) is a subgroup, it is closed under powers of its elements. Hence,
+\[
+\langle g^m \rangle = \{ g^{mk} \mid k \in \mathbb{Z} \} \subseteq H.
+\]
+
+2. **\( H \subseteq \langle g^m \rangle \):**
+
+Take any element \( h \in H \). Since \( h \in G = \langle g \rangle \), there exists an integer \( k \) such that
+\[
+h = g^k.
+\]
+
+By the division algorithm, there exist integers \( q \) and \( r \) such that
+\[
+k = qm + r,
+\]
+where \( 0 \leq r < m \).
+
+Then,
+\[
+h = g^k = g^{qm + r} = g^{qm} g^r = (g^m)^q g^r.
+\]
+
+Since \( g^k = h \in H \) and \( (g^m)^q \in H \) (as shown in step 1), and \( H \) is closed under inverses, it follows that
+\[
+g^r = (g^m)^{-q} h \in H.
+\]
+
+Recall that \( r \) is a nonnegative integer less than \( m \). By the minimality of \( m \), the only way \( g^r \in H \) can hold is if \( r = 0 \). Otherwise, \( r \) would be a smaller positive integer with \( g^r \in H \), contradicting the minimality of \( m \).
+
+Therefore, \( r = 0 \), and thus,
+\[
+h = (g^m)^q \in \langle g^m \rangle.
+\]
+
+This shows \( H \subseteq \langle g^m \rangle \).
+
+---
+
+Since both inclusions hold,
+\[
+H = \langle g^m \rangle,
+\]
+meaning \( H \) is cyclic, generated by \( g^m \).
+
+---
+
+**Conclusion:**
+
+Every subgroup \( H \) of a cyclic group \( G \) is itself cyclic.
+
+---
+
+\(\blacksquare\)",618,60,False,False,False,False,True,True,casework,,,,
+8,4,Prove that every subgroup of a cyclic group is cyclic.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every subgroup of a cyclic group is cyclic.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every subgroup of a cyclic group is cyclic.
+
+---
+
+**Proof:**
+
+Let \( G \) be a cyclic group and \( H \) be a subgroup of \( G \).
+
+Since \( G \) is cyclic, there exists an element \( g \in G \) such that
+\[
+G = \langle g \rangle = \{ g^n \mid n \in \mathbb{Z} \}.
+\]
+
+We want to show that \( H \) is also cyclic.
+
+---
+
+**Step 1: Consider the structure of \( H \).**
+
+Because \( H \subseteq G \), every element \( h \in H \) can be written as \( h = g^k \) for some integer \( k \).
+
+Hence,
+\[
+H \subseteq \{ g^n \mid n \in \mathbb{Z} \}.
+\]
+
+---
+
+**Step 2: If \( H = \{ e \} \), then \( H = \langle e \rangle \) is cyclic.**
+
+Here, \( e \) is the identity element of the group \( G \), and the trivial subgroup is cyclic.
+
+---
+
+**Step 3: Assume \( H \neq \{ e \} \).**
+
+Since \( H \) contains elements other than the identity, consider the set
+\[
+S = \{ n \in \mathbb{Z}^+ \mid g^n \in H \},
+\]
+the set of positive integers \( n \) such that \( g^n \in H \).
+
+Because \( H \) is a subgroup and nontrivial, \( S \) is nonempty.
+
+---
+
+**Step 4: By the well-ordering principle, \( S \) has a smallest element.**
+
+Let \( m = \min S \).
+
+---
+
+**Step 5: Show that \( H = \langle g^m \rangle \).**
+
+- First, note \( g^m \in H \) by definition of \( m \).
+
+- We need to show that any \( h \in H \) can be expressed as \( h = (g^m)^t = g^{mt} \) for some integer \( t \).
+
+Take any \( h \in H \), then \( h = g^k \) for some integer \( k \).
+
+By the division algorithm, there exist unique integers \( q \) and \( r \) such that
+\[
+k = qm + r, \quad 0 \leq r < m.
+\]
+
+Then,
+\[
+h = g^k = g^{qm + r} = g^{qm} g^r = (g^m)^q g^r.
+\]
+
+Since \( h \in H \) and \((g^m)^q \in H\) (because \( g^m \in H \) and \( H \) is a subgroup, closed under powers), it follows that
+\[
+g^r = h (g^m)^{-q} \in H.
+\]
+
+Because \( r \geq 0 \), \( g^r \in H \).
+
+- If \( r = 0 \), then obviously \( h = (g^m)^q \in \langle g^m \rangle \).
+
+- If \( r > 0 \), this contradicts the minimality of \( m \) since \( r < m \), and \( g^r \in H \), meaning \( r \in S \) and \( r < m \).
+
+Therefore, \( r = 0 \).
+
+---
+
+**Step 6: Conclusion.**
+
+Since every element \( h \in H \) can be written as \( h = (g^m)^q \), it follows that
+\[
+H = \langle g^m \rangle,
+\]
+and thus \( H \) is cyclic.
+
+---
+
+**End of the proof.**",525,61,False,False,False,False,False,True,direct,,,,
+8,5,Prove that every subgroup of a cyclic group is cyclic.,algebra,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every subgroup of a cyclic group is cyclic.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every subgroup of a cyclic group is cyclic.
+
+---
+
+**Proof:**
+
+Let \( G \) be a cyclic group, and let \( H \) be any subgroup of \( G \).
+
+Since \( G \) is cyclic, there exists an element \( g \in G \) such that
+\[
+G = \langle g \rangle = \{ g^n \mid n \in \mathbb{Z} \}.
+\]
+
+We want to show that \( H \) is also cyclic, i.e., there exists some element \( h \in H \) such that
+\[
+H = \langle h \rangle.
+\]
+
+---
+
+**Step 1: Consider the case when \( H = \{e\} \) is the trivial subgroup**
+
+If \( H = \{e\} \), then \( H \) is cyclic since it is generated by the identity element \( e = g^0 \). So,
+\[
+H = \langle e \rangle.
+\]
+
+---
+
+**Step 2: Assume \( H \neq \{e\} \)**
+
+Since \( H \subseteq G = \langle g \rangle \), every element of \( H \) is of the form \( g^k \) for some integer \( k \).
+
+Define the set
+\[
+S = \{ n \in \mathbb{Z}^+ : g^n \in H \},
+\]
+where \(\mathbb{Z}^+\) denotes the set of positive integers.
+
+Since \( H \neq \{e\} \), there exists at least one non-identity element in \( H \), so \( S \) is nonempty.
+
+---
+
+**Step 3: Use the Well-Ordering Principle**
+
+Because \( S \subseteq \mathbb{Z}^+ \) and \( S \neq \emptyset \), by the Well-Ordering Principle, \( S \) has a least element. Denote this element by \( m \):
+\[
+m = \min S.
+\]
+
+---
+
+**Step 4: Show \( H = \langle g^m \rangle \)**
+
+We will show that \( H \) is generated exactly by \( g^m \), that is,
+\[
+H = \langle g^m \rangle = \{ g^{mk} \mid k \in \mathbb{Z} \}.
+\]
+
+- First, since \( m \in S \), \( g^m \in H \), so \( \langle g^m \rangle \subseteq H \).
+
+- Now, take any element \( h \in H \). Since \( H \subseteq G = \langle g \rangle \), there exists an integer \( k \) such that
+\[
+h = g^k.
+\]
+
+Use the division algorithm to write \( k \) as
+\[
+k = q m + r,
+\]
+where \( q, r \in \mathbb{Z} \) and \( 0 \leq r < m \).
+
+Then
+\[
+h = g^k = g^{q m + r} = g^{q m} g^r = (g^m)^q g^r.
+\]
+
+Since \( h \in H \) and \( (g^m)^q \in \langle g^m \rangle \subseteq H \), we have
+\[
+g^r = h (g^m)^{-q} \in H,
+\]
+because \( H \) is a subgroup and therefore closed under product and inverses.
+
+---
+
+**Step 5: Conclude \( r = 0 \)**
+
+Recall that \( r \) is a nonnegative integer less than \( m \), and \( g^r \in H \).
+
+- If \( r = 0 \), then \( h \in \langle g^m \rangle \) as desired.
+
+- If \( r > 0 \), then \( r \in S \) because \( g^r \in H \), contradicting the minimality of \( m \).
+
+Thus, the only possibility is \( r = 0 \).
+
+---
+
+**Step 6: Final statement**
+
+Since for every \( h \in H \), \( h \in \langle g^m \rangle \), we conclude that
+\[
+H \subseteq \langle g^m \rangle.
+\]
+
+Together with the earlier inclusion \( \langle g^m \rangle \subseteq H \), we have
+\[
+H = \langle g^m \rangle,
+\]
+which means \( H \) is cyclic.
+
+---
+
+**Therefore, every subgroup \( H \) of",606,62,False,False,False,False,True,True,casework,,,,
+9,1,Prove that every tree with n vertices has n-1 edges.,graph theory,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every tree with n vertices has n-1 edges.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every tree with \( n \) vertices has \( n - 1 \) edges.
+
+---
+
+**Proof:**
+
+We proceed by induction on the number of vertices \( n \).
+
+**Base Case:**
+
+- For \( n = 1 \), a tree with a single vertex has no edges.
+- Thus, the number of edges is \( 1 - 1 = 0 \).
+- The statement holds for \( n = 1 \).
+
+---
+
+**Inductive Hypothesis:**
+
+Assume that every tree with \( k \) vertices has exactly \( k - 1 \) edges, for some integer \( k \geq 1 \).
+
+---
+
+**Inductive Step:**
+
+We need to show that every tree with \( k+1 \) vertices has exactly \( k \) edges.
+
+1. Let \( T \) be a tree with \( k + 1 \) vertices.
+
+2. Since \( T \) is a tree, it is connected and acyclic.
+
+3. It is a known property of trees that there is at least one **leaf vertex**—a vertex with degree 1.
+
+4. Select a leaf vertex \( v \) in \( T \), and remove it along with its single incident edge.
+
+   - Removing \( v \) and its edge results in a graph \( T' \) with \( (k + 1) - 1 = k \) vertices.
+
+5. We need to argue that \( T' \) is still a tree:
+
+   - **Acyclicity:** Removing a vertex and an edge cannot create cycles, so \( T' \) remains acyclic.
+   
+   - **Connectedness:** Since \( v \) was a leaf connected to exactly one other vertex, removing \( v \) does not disconnect any other vertices. Therefore, \( T' \) remains connected.
+
+6. By the inductive hypothesis, \( T' \) has exactly \( k - 1 \) edges.
+
+7. Since \( T \) was formed by adding vertex \( v \) and one edge to \( T' \), the number of edges in \( T \) is:
+
+   \[
+   (k - 1) + 1 = k.
+   \]
+
+Thus, a tree with \( k + 1 \) vertices has \( k \) edges.
+
+---
+
+**Conclusion:**
+
+By the principle of mathematical induction, every tree with \( n \) vertices has exactly \( n - 1 \) edges.
+
+\[
+\boxed{}
+\]
+
+**Q.E.D.**",372,6,True,False,False,False,True,False,induction,,,,
+9,2,Prove that every tree with n vertices has n-1 edges.,graph theory,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every tree with n vertices has n-1 edges.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every tree with \( n \) vertices has \( n - 1 \) edges.
+
+---
+
+**Proof:**
+
+We proceed by mathematical induction on the number of vertices \( n \).
+
+**Base Case:**  
+Let \( n = 1 \).  
+A tree with a single vertex and no edges trivially has \( 1 - 1 = 0 \) edges.  
+Thus, the statement holds for \( n = 1 \).
+
+---
+
+**Inductive Hypothesis:**  
+Assume that every tree with \( k \) vertices has \( k - 1 \) edges, for some \( k \geq 1 \).
+
+---
+
+**Inductive Step:**  
+We need to show that every tree with \( k + 1 \) vertices has \( (k + 1) - 1 = k \) edges.
+
+Let \( T \) be a tree with \( k + 1 \) vertices. By definition, \( T \) is a connected, acyclic graph.
+
+1. Since \( T \) is a tree, it must have at least one vertex of degree 1 (a leaf). This is guaranteed because if there were no leaves, the graph would contain cycles or would not be connected.
+
+2. Let \( v \) be a leaf vertex in \( T \), and let \( e \) be the unique edge incident to \( v \).
+
+3. Remove the vertex \( v \) and the edge \( e \) from \( T \). Denote the resulting graph as \( T' \).
+
+4. The graph \( T' \) has:
+   - \( k + 1 - 1 = k \) vertices,
+   - and since only one edge was removed, the number of edges in \( T' \) is \( |E(T)| - 1 \).
+
+5. We claim that \( T' \) is still a tree:
+   - **\( T' \) is connected:** Removing a leaf and its edge cannot disconnect the graph because the leaf was connected to the rest of the tree by exactly one edge.
+   - **\( T' \) is acyclic:** Since \( T \) was acyclic, removing a leaf and its edge cannot create cycles.
+
+6. By the inductive hypothesis, since \( T' \) is a tree with \( k \) vertices, it must have \( k - 1 \) edges:
+   \[
+   |E(T')| = k - 1
+   \]
+
+7. Since \( T \) was formed by adding leaf \( v \) and edge \( e \) to \( T' \), the number of edges in \( T \) is:
+   \[
+   |E(T)| = |E(T')| + 1 = (k - 1) + 1 = k
+   \]
+
+---
+
+**Conclusion:**  
+By induction, every tree with \( n \) vertices has \( n - 1 \) edges.
+
+\[
+\boxed{
+\text{Q.E.D.}
+}
+\]",441,10,True,False,False,False,True,True,induction,,,,
+9,3,Prove that every tree with n vertices has n-1 edges.,graph theory,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every tree with n vertices has n-1 edges.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every tree with \( n \) vertices has \( n-1 \) edges.
+
+---
+
+**Proof:**
+
+**Definitions:**
+
+- A **tree** is a connected, acyclic graph.
+- Let \( T = (V, E) \) be a tree with \( |V| = n \) vertices and \( |E| = m \) edges.
+
+We want to prove that \( m = n - 1 \).
+
+---
+
+**Proof by induction on the number of vertices \( n \):**
+
+**Base case:**
+
+- When \( n = 1 \), the tree has a single vertex and no edges.
+- Thus, \( m = 0 = 1 - 1 \).
+- The statement holds for \( n = 1 \).
+
+---
+
+**Inductive hypothesis:**
+
+Assume that every tree with \( k \) vertices has exactly \( k - 1 \) edges, for some integer \( k \geq 1 \).
+
+---
+
+**Inductive step:**
+
+Consider a tree \( T \) with \( k + 1 \) vertices.
+
+- Since \( T \) is a tree, it is connected and acyclic.
+- A fundamental property of trees is that they have at least one leaf vertex (a vertex of degree 1). Denote this leaf vertex by \( v \).
+
+Remove the leaf vertex \( v \) and the edge \( e \) connected to it, resulting in a graph \( T' \):
+
+- \( T' \) has \( k + 1 - 1 = k \) vertices.
+- \( T' \) has \( m - 1 \) edges.
+
+Because removing a leaf vertex and its edge cannot disconnect the graph or create cycles, \( T' \) remains a tree (connected and acyclic).
+
+By the inductive hypothesis, since \( T' \) is a tree with \( k \) vertices, it must have \( k - 1 \) edges:
+
+\[
+|E(T')| = m - 1 = k - 1.
+\]
+
+From this, solve for \( m \):
+
+\[
+m = k - 1 + 1 = k.
+\]
+
+Since \( k = (k + 1) - 1 \), this means the original tree \( T \) with \( k + 1 \) vertices has:
+
+\[
+m = (k + 1) - 1
+\]
+
+edges.
+
+---
+
+**Conclusion:**
+
+By mathematical induction, every tree with \( n \) vertices has exactly \( n - 1 \) edges.
+
+---
+
+**Q.E.D.**",382,16,True,False,False,False,True,False,induction,,,,
+9,4,Prove that every tree with n vertices has n-1 edges.,graph theory,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every tree with n vertices has n-1 edges.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every tree with \( n \) vertices has \( n - 1 \) edges.
+
+---
+
+**Proof:**
+
+We proceed by mathematical induction on the number of vertices \( n \).
+
+---
+
+**Base Case:**
+
+- For \( n = 1 \), the tree has exactly one vertex and no edges.
+- The number of edges is \( 0 \), which equals \( 1 - 1 \).
+- Hence, the statement holds for \( n = 1 \).
+
+---
+
+**Inductive Hypothesis:**
+
+Assume that every tree with \( k \) vertices has exactly \( k - 1 \) edges for some integer \( k \geq 1 \).
+
+---
+
+**Inductive Step:**
+
+We need to prove that every tree with \( k + 1 \) vertices has \( (k + 1) - 1 = k \) edges.
+
+Let \( T \) be a tree with \( k + 1 \) vertices.
+
+- Since \( T \) is a tree, it is connected and contains no cycles.
+- Consider any leaf vertex \( v \) in \( T \). A leaf is a vertex with degree 1 (except if \( k+1=1 \), which is the base case already handled).
+  
+  - Such a leaf must exist because every tree with at least two vertices has at least one leaf.
+  
+- Remove this leaf \( v \) and the edge \( e \) incident to it from \( T \).
+
+Call the resulting graph \( T' \).
+
+- \( T' \) has \( k \) vertices.
+- \( T' \) is still a tree:
+  - It is connected because removing a leaf and its incident edge cannot disconnect the remaining vertices.
+  - It contains no cycles because \( T \) had none and removing edges cannot create new cycles.
+
+By the inductive hypothesis, \( T' \) has \( k - 1 \) edges.
+
+Since \( T \) was formed by adding vertex \( v \) and the edge \( e \) to \( T' \), the number of edges in \( T \) is
+\[
+(k - 1) + 1 = k.
+\]
+
+---
+
+**Conclusion:**
+
+By the principle of mathematical induction, every tree with \( n \) vertices has exactly \( n - 1 \) edges.
+
+\[
+\boxed{}
+\]
+
+This completes the proof.",375,6,True,False,False,False,True,False,induction,,,,
+9,5,Prove that every tree with n vertices has n-1 edges.,graph theory,3,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that every tree with n vertices has n-1 edges.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** Every tree with \( n \) vertices has \( n - 1 \) edges.
+
+---
+
+**Proof:**
+
+We proceed by induction on the number of vertices \( n \).
+
+**Base Case:**
+
+- When \( n = 1 \), the tree has exactly one vertex and no edges.
+- The number of edges is \( 0 = 1 - 1 \), which satisfies the theorem.
+
+Thus, the statement holds for \( n = 1 \).
+
+---
+
+**Inductive Hypothesis:**
+
+Assume that any tree with \( k \) vertices has exactly \( k - 1 \) edges for some integer \( k \geq 1 \).
+
+---
+
+**Inductive Step:**
+
+We need to prove that any tree with \( k + 1 \) vertices has exactly \( (k + 1) - 1 = k \) edges.
+
+Let \( T \) be a tree with \( k + 1 \) vertices.
+
+- Since \( T \) is a tree, it is connected and acyclic.
+- A key property of trees is that there exists at least one vertex with degree 1 (a leaf).
+
+Choose a leaf vertex \( v \) in \( T \) and remove it along with the edge incident to it. 
+
+- Let the resulting graph be \( T' \).
+- \( T' \) has \( k \) vertices.
+- \( T' \) is still a tree because:
+  - Removing a leaf cannot disconnect the graph.
+  - Removing an edge and vertex cannot create cycles.
+  - Thus, \( T' \) is connected and acyclic, so \( T' \) is a tree.
+
+By the inductive hypothesis, \( T' \) has exactly \( k - 1 \) edges.
+
+Since \( T \) was obtained by adding one vertex and one edge to \( T' \), \( T \) has:
+
+\[
+(k - 1) + 1 = k
+\]
+
+edges.
+
+---
+
+**Conclusion:**
+
+By the principle of mathematical induction, every tree with \( n \) vertices has \( n - 1 \) edges.
+
+\[
+\boxed{
+\text{Q.E.D.}
+}
+\]",331,6,True,False,False,False,True,False,induction,,,,
+10,1,Prove that there are infinitely many primes.,number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that there are infinitely many primes.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** There are infinitely many prime numbers.
+
+**Proof:**
+
+Assume, for the sake of contradiction, that there are only finitely many primes. Let these primes be:
+
+\[
+p_1, p_2, p_3, \ldots, p_n
+\]
+
+where \( p_1 = 2 < p_2 = 3 < p_3 = 5 < \cdots < p_n \) are all the primes that exist.
+
+Now consider the number:
+
+\[
+Q = p_1 \times p_2 \times p_3 \times \cdots \times p_n + 1
+\]
+
+That is, \( Q \) is one more than the product of all the primes.
+
+Since \( Q \) is greater than 1, it must be either prime or composite.
+
+- **Case 1: \( Q \) is prime.**
+
+If \( Q \) is prime, then \( Q \) is a prime number not in the list \( p_1, p_2, \ldots, p_n \), because \( Q > p_n \). This contradicts the assumption that \( p_1, p_2, \ldots, p_n \) are all the primes.
+
+- **Case 2: \( Q \) is composite.**
+
+If \( Q \) is composite, then it must have a prime divisor, say \( p \). Since \( p \) is prime, it must be one of the primes in the list \( p_1, p_2, \ldots, p_n \), because by assumption these are all the primes.
+
+Because \( p \mid Q \) and \( p \mid (p_1 p_2 \cdots p_n) \) (since \( p \) is one of the primes in the product by assumption), it follows that \( p \) divides the difference:
+
+\[
+Q - (p_1 p_2 \cdots p_n) = 1
+\]
+
+Thus,
+
+\[
+p \mid 1
+\]
+
+which is impossible since \( p \geq 2 \).
+
+This contradiction arises from the assumption that the list \( p_1, p_2, \ldots, p_n \) includes all primes.
+
+Therefore, the initial assumption that there are finitely many primes is false.
+
+**Conclusion:**
+
+There are infinitely many prime numbers.
+
+\[
+\boxed{\text{Q.E.D.}}
+\]",316,42,False,True,False,False,True,False,contradiction,,,,
+10,2,Prove that there are infinitely many primes.,number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that there are infinitely many primes.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** There are infinitely many prime numbers.
+
+**Proof:**
+
+Assume, for the sake of contradiction, that there are only finitely many prime numbers. Let the complete list of all prime numbers be:
+
+\[
+p_1, p_2, p_3, \ldots, p_n
+\]
+
+where \(p_1 = 2\), \(p_2 = 3\), and so forth up to \(p_n\), the largest prime.
+
+Define a number \(Q\) as follows:
+
+\[
+Q = p_1 \times p_2 \times p_3 \times \cdots \times p_n + 1
+\]
+
+That is, \(Q\) is the product of all the primes in our list plus one.
+
+Now, consider the primality of \(Q\):
+
+1. If \(Q\) is prime, then \(Q\) is a prime number that is not in our original list of all primes \(p_1, p_2, \ldots, p_n\). This contradicts the assumption that \(p_1, p_2, \ldots, p_n\) are all the primes.
+
+2. If \(Q\) is not prime, then \(Q\) must have a prime divisor. Any prime divisor \(p\) of \(Q\) must be one of the primes in our list, since by assumption these are all primes. That is, there exists some \(p_k\) such that \(p_k \mid Q\).
+
+   Since \(p_k\) divides the product \(p_1 p_2 \cdots p_n\), it follows that \(p_k \mid p_1 p_2 \cdots p_n\).
+
+   Thus, \(p_k\) divides both \(Q\) and \(p_1 p_2 \cdots p_n\).
+
+   By the property of divisibility, if \(p_k \mid Q\) and \(p_k \mid p_1 p_2 \cdots p_n\), then \(p_k\) divides their difference:
+
+   \[
+   p_k \mid (Q - p_1 p_2 \cdots p_n)
+   \]
+
+   Substitute \(Q = p_1 p_2 \cdots p_n + 1\):
+
+   \[
+   Q - p_1 p_2 \cdots p_n = 1
+   \]
+
+   Therefore,
+
+   \[
+   p_k \mid 1
+   \]
+
+   But no prime number divides 1, since 1 has no prime divisors.
+
+   This is a contradiction.
+
+In both cases, assuming a finite list of primes leads to a contradiction.
+
+Therefore, the original assumption is false, and there must be infinitely many prime numbers.
+
+**Q.E.D.**",308,53,False,True,False,False,True,False,contradiction,,,,
+10,3,Prove that there are infinitely many primes.,number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that there are infinitely many primes.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** There are infinitely many prime numbers.
+
+**Proof:**
+
+Assume, for the sake of contradiction, that there are only finitely many primes. Let these primes be  
+\[ p_1, p_2, p_3, \ldots, p_n \]  
+where \( p_1 = 2 \), \( p_2 = 3 \), and so forth, up to the largest prime \( p_n \).
+
+Define the number  
+\[
+Q = p_1 \times p_2 \times p_3 \times \cdots \times p_n + 1.
+\]
+
+Notice that \( Q \) is greater than 1 and is not divisible by any of the primes \( p_1, p_2, \ldots, p_n \) because when \( Q \) is divided by any \( p_i \), the remainder is 1:
+\[
+Q \mod p_i = 1, \quad \text{for each } i = 1, 2, \ldots, n.
+\]
+
+There are two possibilities for \( Q \):
+
+1. **\( Q \) is prime.**  
+   If \( Q \) itself is prime, then \( Q \) is a prime number not in the list \( p_1, p_2, \ldots, p_n \), contradicting the assumption that \( p_1, p_2, \ldots, p_n \) were all the primes.
+
+2. **\( Q \) is composite.**  
+   If \( Q \) is composite, then it must have a prime divisor. Let \( p \) be a prime divisor of \( Q \). According to our assumption, \( p \) must be one of \( p_1, p_2, \ldots, p_n \). But since \( p \mid Q \) and \( p \mid (p_1 \times p_2 \times \cdots \times p_n) \), it follows that \( p \mid (Q - p_1 p_2 \cdots p_n) \).  
+   Thus,  
+   \[
+   p \mid \bigl(Q - p_1 p_2 \cdots p_n\bigr) = 1.
+   \]  
+   No prime divides 1, which is a contradiction.
+
+In either case, we reach a contradiction. Therefore, the initial assumption that there are finitely many primes is false.
+
+**Conclusion:** There are infinitely many prime numbers.
+
+\(\boxed{}\)",310,40,False,True,False,False,True,False,contradiction,,,,
+10,4,Prove that there are infinitely many primes.,number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that there are infinitely many primes.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:** There are infinitely many prime numbers.
+
+**Proof:**
+
+Suppose, for the sake of contradiction, that there are only finitely many primes. Let these primes be:
+
+\[
+p_1, p_2, p_3, \ldots, p_n,
+\]
+
+where \(p_1 = 2\), \(p_2 = 3\), and so forth up to \(p_n\), the largest prime number.
+
+Define a new number \(Q\) as follows:
+
+\[
+Q = p_1 \times p_2 \times p_3 \times \cdots \times p_n + 1,
+\]
+
+i.e., \(Q\) is the product of all the primes in our finite list plus one.
+
+**Step 1: Analyze the number \(Q\).**
+
+By construction, \(Q\) is greater than 1 and is not divisible by any of the primes \(p_1, p_2, \ldots, p_n\), because when dividing \(Q\) by any \(p_i\), the remainder is 1:
+
+\[
+Q \div p_i = \text{some integer} + \frac{1}{p_i}.
+\]
+
+Thus,
+
+\[
+Q \not\equiv 0 \pmod{p_i} \quad \text{for all } i=1,2,\ldots,n.
+\]
+
+**Step 2: Consider the possibilities for \(Q\).**
+
+There are two cases:
+
+- **Case 1:** \(Q\) is prime.
+
+If \(Q\) is prime, then \(Q\) is a prime number not in our original list \(p_1, p_2, \ldots, p_n\). This contradicts our assumption that \(p_1, \ldots, p_n\) are all the primes.
+
+- **Case 2:** \(Q\) is composite.
+
+If \(Q\) is composite, then by the Fundamental Theorem of Arithmetic, \(Q\) has at least one prime divisor. Let that prime divisor be \(p\).
+
+Since \(p\) divides \(Q\), we have:
+
+\[
+p \mid Q.
+\]
+
+But \(p\) must also divide the product \(p_1 p_2 \cdots p_n\), since these include all primes by assumption.
+
+Therefore, \(p\) divides both
+
+\[
+Q = p_1 p_2 \cdots p_n + 1,
+\]
+and
+\[
+p_1 p_2 \cdots p_n.
+\]
+
+Hence, \(p\) divides the difference:
+
+\[
+Q - p_1 p_2 \cdots p_n = 1.
+\]
+
+This implies
+
+\[
+p \mid 1,
+\]
+
+which is impossible since no prime divides 1.
+
+This contradiction shows that \(p\) cannot be any of the primes in the list, implying the existence of a prime not in the original finite list.
+
+**Step 3: Conclusion**
+
+In both cases, whether \(Q\) is prime or composite, we find a prime number not in our original finite list, contradicting the assumption that there are only finitely many primes.
+
+Therefore, the assumption is false, and there are infinitely many primes.
+
+\[
+\boxed{
+\text{There are infinitely many prime numbers.}
+}
+\]
+
+**Q.E.D.**",384,42,False,True,False,False,True,False,contradiction,,,,
+10,5,Prove that there are infinitely many primes.,number theory,2,gpt-4.1-mini,0.8,"
+Prove the following theorem rigorously.
+
+Theorem:
+Prove that there are infinitely many primes.
+
+Instructions:
+- Give a clear mathematical proof.
+- Do not skip important logical steps.
+- Do not mention that you are an AI.
+- End the proof clearly.
+","**Theorem:**  
+There are infinitely many prime numbers.
+
+**Proof:**
+
+Suppose, for the sake of contradiction, that there are only finitely many prime numbers. Let these primes be:
+
+\[
+p_1, p_2, p_3, \ldots, p_n
+\]
+
+where \(p_1 = 2\) is the smallest prime, and \(p_n\) is the largest prime.
+
+Define the number:
+
+\[
+Q = p_1 \times p_2 \times p_3 \times \cdots \times p_n + 1
+\]
+
+That is, \(Q\) is the product of all the primes in our list plus 1.
+
+Now, consider the primality of \(Q\):
+
+1. If \(Q\) is prime, then \(Q\) is a prime number not in our original list \(\{p_1, p_2, \ldots, p_n\}\), which contradicts the assumption that \(p_1, p_2, \ldots, p_n\) are all the primes.
+
+2. If \(Q\) is composite, then it must have a prime divisor. Let this prime divisor be \(p\). Since \(p\) divides \(Q\), and \(p\) is prime, \(p\) must be one of the primes \(p_1, p_2, \ldots, p_n\) because we assumed these are all the primes.
+
+   But note that \(p\) divides the product \(p_1 p_2 \cdots p_n\) by definition, so \(p \mid p_1 p_2 \cdots p_n\).
+
+   Therefore, \(p\) divides both \(Q\) and \(p_1 p_2 \cdots p_n\).
+
+   Since \(p\) divides both numbers, \(p\) must divide their difference:
+
+   \[
+   Q - p_1 p_2 \cdots p_n = (p_1 p_2 \cdots p_n + 1) - p_1 p_2 \cdots p_n = 1
+   \]
+
+   But no prime number divides 1. This is a contradiction.
+
+Since both cases lead to contradictions, our initial assumption that there are only finitely many primes must be false.
+
+**Conclusion:**  
+There are infinitely many prime numbers.
+
+\(\boxed{\text{Q.E.D.}}\)",263,41,False,True,False,False,True,False,contradiction,,,,

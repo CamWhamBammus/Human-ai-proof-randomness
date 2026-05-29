@@ -1,0 +1,11 @@
+theorem_id,theorem_text,subject,difficulty
+1,"Prove that the sum of the first n odd positive integers is n^2.","induction",1
+2,"Prove that the product of two odd integers is odd.","number theory",1
+3,"Prove that if n^2 is even, then n is even.","number theory",2
+4,"Prove that sum_{k=0}^n binom(n,k)=2^n.","combinatorics",2
+5,"Prove that if A and B are independent events, then A^c and B are independent.","probability",2
+6,"Prove that every convergent sequence is bounded.","analysis",2
+7,"Prove that every finite integral domain is a field.","algebra",3
+8,"Prove that every subgroup of a cyclic group is cyclic.","algebra",3
+9,"Prove that every tree with n vertices has n-1 edges.","graph theory",3
+10,"Prove that there are infinitely many primes.","number theory",2

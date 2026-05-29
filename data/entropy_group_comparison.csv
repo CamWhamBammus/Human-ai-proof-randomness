@@ -1,0 +1,2 @@
+median_entropy,low_entropy_mean_correct_rate,high_entropy_mean_correct_rate,difference_low_minus_high,bootstrap_ci_lower,bootstrap_ci_median,bootstrap_ci_upper
+0.0,0.9,0.875,0.025000000000000022,-0.18333333333333346,0.025000000000000022,0.20000000000000007

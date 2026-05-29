@@ -1,0 +1,11 @@
+theorem_id,theorem_text,subject,difficulty
+11,"Prove that every subgroup of a finitely generated group is finitely generated.","group theory",4
+12,"Prove that every continuous function on an open interval is uniformly continuous.","analysis",4
+13,"Prove that pairwise independence of events implies mutual independence.","probability",4
+14,"Prove that every connected graph with n vertices has n-1 edges.","graph theory",4
+15,"Prove that every bounded sequence converges.","analysis",4
+16,"Prove that every injective linear map is surjective.","linear algebra",4
+17,"Prove that if A and B are independent, then A and B^c are not independent.","probability",4
+18,"Prove that every finite group is cyclic.","group theory",4
+19,"Prove that the harmonic series converges.","analysis",4
+20,"Prove that if n is prime, then 2^n - 1 is prime.","number theory",4

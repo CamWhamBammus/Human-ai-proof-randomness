@@ -1,0 +1,11 @@
+strategy,num_attempts,num_correct,num_incorrect,empirical_correct_rate,posterior_mean_reliability
+induction,10,10,0,1.0,0.9166666666666666
+construction,9,9,0,1.0,0.9090909090909091
+contradiction,6,6,0,1.0,0.875
+algebraic,5,5,0,1.0,0.8571428571428571
+direct,5,5,0,1.0,0.8571428571428571
+probabilistic,5,5,0,1.0,0.8571428571428571
+contrapositive,4,4,0,1.0,0.8333333333333334
+casework,3,3,0,1.0,0.8
+bijection,2,2,0,1.0,0.75
+combinatorial,1,1,0,1.0,0.6666666666666666
