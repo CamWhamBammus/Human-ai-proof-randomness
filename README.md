@@ -15,7 +15,8 @@ This project studies stochastic variation in AI-generated mathematical proofs. F
 The main idea is to treat repeated proof attempts for a fixed theorem as samples from a theorem-conditioned probability distribution over proof strategies and correctness outcomes. I then use entropy, Bayesian reliability estimates, bootstrap comparisons, and exploratory logistic regression to study how randomness relates to reliability.
 
 <p align="center">
-  <img src="figures/readme/correctness_by_batch.png" alt="Correctness rate by theorem batch" width="720">
+  <img width="920" height="750" alt="correctness_by_batch" src="https://github.com/user-attachments/assets/b2045966-a9e6-43a1-bdfe-4cef11b3476f" />
+
 </p>
 
 ## Research questions
@@ -45,7 +46,8 @@ The main idea is to treat repeated proof attempts for a fixed theorem as samples
 Some prompts produced the same strategy in all five generations, while others produced multiple distinct proof approaches. The maximum observed theorem-level entropy was approximately `1.37` bits.
 
 <p align="center">
-  <img src="figures/readme/strategy_entropy_by_theorem.png" alt="Proof-strategy entropy by theorem" width="820">
+  <img width="1130" height="555" alt="strategy_entropy_by_theorem" src="https://github.com/user-attachments/assets/b1b6edfb-6f46-474d-b110-925b73a73861" />
+
 </p>
 
 ### 2. Entropy alone was not a strong predictor of correctness
@@ -53,7 +55,8 @@ Some prompts produced the same strategy in all five generations, while others pr
 The low-entropy group had mean correctness `0.900`, while the high-entropy group had mean correctness `0.875`. The observed difference was only `0.025`, with a bootstrap 95% interval of `[-0.183, 0.200]`.
 
 <p align="center">
-  <img src="figures/readme/entropy_vs_correctness.png" alt="Entropy versus correctness rate by theorem" width="760">
+  <img width="1065" height="690" alt="entropy_vs_correctness" src="https://github.com/user-attachments/assets/7556539e-0f3e-4aa5-93b8-12ce7b47da68" />
+
 </p>
 
 ### 3. Proof strategy was more informative than entropy alone
@@ -65,7 +68,8 @@ Counterexample-based responses were the most reliable in this dataset, while ind
 - **Induction:** `0.647`
 
 <p align="center">
-  <img src="figures/readme/bayesian_reliability_by_strategy.png" alt="Bayesian reliability estimate by proof strategy" width="820">
+  <img width="1130" height="545" alt="bayesian_reliability_by_strategy" src="https://github.com/user-attachments/assets/e02a5e0a-8791-493c-b5b9-28c93f50a6a0" />
+
 </p>
 
 ## Methods
