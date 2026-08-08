@@ -1,4 +1,4 @@
-# Math 60 Final Project: Human-AI Proof Randomness
+# Human-AI Proof Randomness
 
 **How Random is Human-AI Interaction? A Stochastic Model of AI-Generated Mathematical Proofs**
 
